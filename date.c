@@ -6,15 +6,17 @@ int readInput(char str[]);
 int validateDate(int year, int month, int day);
 int checkLeap(int year);
 
-
+int day;
+int month;
+int year;
 
 // usuing ascii '0' = 48 therefore we substract 48 from the char to get a number.
 //  if a user write # or * the valid date will take care of it.
 int readInput(char str[]){
 
-  int year = (int)((str[0]-48)*10 + (str[1]-48)); 
-  int month = (int)((str[2]-48)*10 + (str[3]-48));
-  int day = (int)((str[4]-48)*10 + (str[5]-48));
+  year = (int)((str[0]-48)*10 + (str[1]-48)); 
+  month = (int)((str[2]-48)*10 + (str[3]-48));
+  day = (int)((str[4]-48)*10 + (str[5]-48));
 
   //int leap = checkLeap(year);
   int validate = validateDate(year, month, day);
@@ -58,4 +60,45 @@ int checkLeap(int year){
     return 1;
 
   return 0;
+}
+void calcDate(int currentYear, int currentMonth, int currentDay)
+{
+  if(currentDay == 28 & currentMonth == 2)
+  {
+    if(checkLeap(currentYear*100) == 1)
+      day = 29;
+    day = 28;
+    month = 3;
+  }
+  else if((currentDay == 30) & ( month == 4 || month == 6 || month == 9 || month == 11))
+  {
+    month++;
+    day = 1;
+  }
+  else if((currentDay == 31) & (month == 1 || month == 3 ||month == 5 ||month == 7 || month == 8 || month == 10 || month == 12))
+  {
+    day = 1;
+    if(currentMonth == 12)
+      month = 1;
+    else
+      month++;
+  }
+  else 
+    day++; 
+}
+void printDate()
+{
+  //int thousandYear = year/1000
+  //int hundredYear = year/100
+  int tenthYear = year/10;
+  int dispYear = year%10;
+  
+  int tenthMonth = year/10;
+  int dispMonth = year%10;
+  
+  int tenthDay = year/10;
+  int dispDay = year%10;
+    
+  
+  char date [] = {tenthYear+48, dispYear+48,'/', tenthMonth+48, dispMonth+48,'/', tenthDay+48, dispDay+48};
 }

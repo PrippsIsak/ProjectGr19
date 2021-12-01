@@ -53,6 +53,8 @@
             <file>$PROJ_DIR$\Debug\Obj\commonFuncs.o</file>
             <file>$PROJ_DIR$\head.h</file>
             <file>$PROJ_DIR$\Debug\Obj\display.o</file>
+            <file>$PROJ_DIR$\time.c</file>
+            <file>$PROJ_DIR$\program.c</file>
             <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
             <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
             <file>$PROJ_DIR$\date.c</file>
@@ -143,7 +145,7 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 16 18 22 10 13 15 48 39 49 23 19 12 26 29 50 17 46 28 32 30 7 43 27</file>
+                    <file> 16 18 22 10 13 15 50 39 51 23 19 12 26 29 52 17 46 28 32 30 7 43 27 48</file>
                 </tool>
             </inputs>
         </file>

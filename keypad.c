@@ -9,31 +9,42 @@ int isPressed = 0;
 int tmpKey;
 char inputs[];
 
+int startRow = 5;
+void wait(int delay);
+void checkHigh();
+int whereTo;
+
 void waitFor6Inputs(){
- while(!(keypad() == 1)){}
+  int val;
+  while(!(isPressed)){tmpKey = keypad();}
+   if(tmpKey == 1)
+   {
     clearDisplay();
     printDateMenu();
+    whereTo = 1;
+   }
+   if(tmpKey == 2)
+   {
+     clearDisplay();
+    printTimeMenu();
+    whereTo = 2;
+   }
     int i = 0;
     isPressed = 0;
-    while(i != 6){
-      tmpKey = keypad();
-      if(isPressed == 1)
-      {
-        delay(2500000);
-          //while(isPressed){
-          inputs[i] = tmpKey+48;
-          printPos(inputs,120,0);
-          i++;
-          isPressed = 0;
-          //break;
-        //}
-      }
+    wait(500);
+    while(i != 6)
+    {
+        while(!(keyStatus%500 == 0 & isPressed == 1)){ tmpKey = keypad();}
+        inputs[i] = tmpKey+48;
+        printPosChar(inputs[i],120+i,0);
+        i++;
+        isPressed = 0;
+        keyStatus =1;
     }
-  
+ wait(500);
+ tmpKey = -1;
 }
-
-void initKeypad()
-{
+void initKeypad(){
   *AT91C_PIOD_PER = pin28;
   *AT91C_PIOD_PER = pin27;
 
@@ -59,6 +70,10 @@ void initKeypad()
     *AT91C_PIOC_PPUDR = pin40;
     *AT91C_PIOC_PPUDR = pin41;
   
+}
+void wait(int delay)
+{
+  while(!(keyStatus%delay == 0)){}
 }
 int keypad()
 {
@@ -104,7 +119,7 @@ pin39      5        1<<7
   for(int col = 0; col<3; col++) //0101  bitwise
   {
     *AT91C_PIOC_CODR = (1<<colClear);
-    int startRow = 5;
+    startRow = 5;
     for(int row = 0; row<4; row++)
     {
       if(!((*AT91C_PIOC_PDSR)&(1<<startRow)))
@@ -145,4 +160,8 @@ pin39      5        1<<7
   *AT91C_PIOC_SODR = pin27;
    isPressed = 0;
 return value;
+}
+void checkHigh()
+{
+  while((*AT91C_PIOC_PDSR)&(1<<startRow)){};
 }

@@ -10,13 +10,12 @@ void TCO_Handler(void);
 void SysTick_Handler(void);
 void write_temp(double temprature);
 
-int flag;
-unsigned int tempStatus = 0, resetDel=0, tFlag1 =0, tFlag2 =1;  // FIXA 
+
 
 double calcTemp();
 unsigned int fallingCheck = 0;
 void clearDisplay();
-double checkTemp = 0;
+
 
 void writeTempWhenReady(){
     if(tFlag2){
@@ -79,15 +78,7 @@ void TC0_Handler(void)
   *AT91C_TC0_SR;
   flag = 1;
 }
-void SysTick_Handler(void){
-  if(tFlag1){
-    resetDel++;
-  }
-  if(resetDel==13){
-    resetDel=0;
-    tFlag1=0;
-  }
-}
+
 double calcTemp()
 {
   int ra = *AT91C_TC0_RA;

@@ -115,8 +115,6 @@ void Write_Command_2_Display(unsigned char Command){
 
     // Make databus as input
     *AT91C_PIOC_ODR = bus; //output disable register
-
-
 }
 
 void Write_Data_2_Display(unsigned char Data) {
@@ -125,8 +123,6 @@ void Write_Data_2_Display(unsigned char Data) {
         if(Read_Status_Display()&(3<<2))  //STA2,3
             break;
     }
-
-
     // Clear databus
     *AT91C_PIOC_CODR = bus;//clear output data register
 
@@ -252,13 +248,6 @@ void clearDisplay(){
     printKey(14); 
   }
  }
-void startMenu()
-{
-    Write_Data_2_Display(0x11); //1
-    Write_Data_2_Display(0x11);
-    Write_Command_2_Display(0xC0);
-  
-}
 void printString(char key[])
 {
   int n = 0;
@@ -271,6 +260,13 @@ void printChar(char key)
 {
   Write_Data_2_Display(key-0x20); //usuing ascii A = 65, and A in font = 33, 65-33 = 32 = 0xC
   Write_Command_2_Display(0xC0);
+}
+void printPosChar(char key, char x, char y){
+  
+    Write_Data_2_Display(x);
+    Write_Data_2_Display(y);
+    Write_Command_2_Display(0x24);
+    printChar(key);
 }
 void printPos(char str[], char x, char y){
   
@@ -288,9 +284,13 @@ void printStartMenu()
   
   printPos("Press [] to setup calendar ",180 ,0 );
   printPos("Press [1] to setup Maggan ",240 ,0 );
-  printPos("Press [1] to setup Steffe ",44 ,1 );//try and error, do not know why. Ask Hazeem
-  
-  
+  printPos("Press [1] to setup Steffe ",44 ,0 );//try and error, do not know why. Ask Hazeem
+}
+void printTimeMenu()
+{
+ printPos("------ Set Time ------", 5, 0);
+ printPos("Enter Time: HH:MM:SS", 60, 0);
+ printBack();
 }
 void printDateMenu()
 {
