@@ -6,7 +6,8 @@ int readInput(char str[]);
 int validateDate(int year, int month, int day);
 int checkLeap(int year);
 void printDate();
-
+void waitForDate();
+char dateSet [8];
 int day;
 int month;
 int year;
@@ -62,13 +63,24 @@ int checkLeap(int year){
 
   return 0;
 }
+
 void calcDate(int currentYear, int currentMonth, int currentDay)
 {
-  if(currentDay == 28 & currentMonth == 2)
+  dateFlag = 0;
+  if(currentDay == 28 & currentMonth == 2) // TODO: Flytta runt lite
   {
     if(checkLeap(currentYear) == 1)
       day = 29;
-    day = 28;
+    else
+    {
+      day = 1;
+    month = 3;
+    }
+    
+  }
+  else if(currentDay == 29 & currentMonth ==2)
+  {
+    day = 1;
     month = 3;
   }
   else if((currentDay == 30) & ( month == 4 || month == 6 || month == 9 || month == 11))
@@ -88,7 +100,7 @@ void calcDate(int currentYear, int currentMonth, int currentDay)
       month++;
   }
   else 
-    day++; 
+    day++;
 }
 void printDate()
 {
@@ -106,4 +118,23 @@ void printDate()
   
   char date [] = {thousandYear+48,hundredYear+48,tenthYear+48,dispYear+48,'/',tenthMonth+48,dispMonth+48,'/',tenthDay+48,dispDay+48};
   printPos(date, 204, 1);
+}
+void waitForDate(){
+  while(!(isPressed)){tmpKey = keypad();}  
+    clearDisplay();
+    printDateMenu();
+    int i = 0;
+    wait(500);
+    isPressed = 0;
+    while(i != 8)
+    {
+        buttonUp(); 
+        dateSet[i] = tmpKey+48;
+        printPosChar(dateSet[i],120+i,0);
+        i++;
+        isPressed = 0;
+        keyStatus =1;
+    }
+ wait(500);
+ tmpKey = -1;
 }

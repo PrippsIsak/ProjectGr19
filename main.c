@@ -11,39 +11,25 @@ float readLight;
 int main()
 {
   initEverything();
-start:
     Write_Data_2_Display(0);
     Write_Data_2_Display(0);
     Write_Command_2_Display(0x24);
     printStartMenu();
+    int key;
     
     while(1)
      { 
-       waitForInputs();
-       if(whereTo==1){
-        if(readInput(inputs)==1)
-          {
-            printPos("Date successfully loaded!",180,0 );
-            printDate();
-            break;
-          }
-          clearDisplay();
-          printDateMenu();
-          printPos("Invalid date, try again ",180 ,0 );
-         }
-       if(whereTo==2)
+       if(readyDate == 1)
        {
-          if(readTime(inputs)==1)
-          {
-            printPos("Time successfully loaded!",180,0 );
-            break;
-           }
-          clearDisplay();
-          printDateMenu();
-          printPos("Invalid time, try again ",180 ,0 );
-        }
+         printDate();
+         readyDate = 0;
+       }
+       key = keypad();
+       if(key==1)
+         startDate();
+       if(key == 2)
+         startTime();
      }
-      while(1){}
   return 0;
 }
 

@@ -7,14 +7,13 @@ void waitForInputs();
 int keypad();
 int isPressed = 0;
 int tmpKey;
-char inputs[];
 
 int startRow = 5;
 void wait(int delay);
-void checkHigh();
+void buttonUp();
 int whereTo;
 
-void waitForInputs(){
+/*void waitForInputs(){
   int range;
   while(!(isPressed)){tmpKey = keypad();}
    if(tmpKey == 1)
@@ -45,7 +44,7 @@ void waitForInputs(){
     }
  wait(500);
  tmpKey = -1;
-}
+}*/
 void initKeypad(){
   *AT91C_PIOD_PER = pin28;
   *AT91C_PIOD_PER = pin27;
@@ -163,7 +162,9 @@ pin39      5        1<<7
    isPressed = 0;
 return value;
 }
-void checkHigh()
+void buttonUp()
 {
-  while((*AT91C_PIOC_PDSR)&(1<<startRow)){};
+  while(isPressed == 0){ tmpKey = keypad();}
+  while(isPressed == 1){keypad();}
+  wait(50);
 }

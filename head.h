@@ -1,5 +1,7 @@
 #include "at91sam3x8.h"
 #include "system_sam3x.h"
+
+
 int keyStatus;
 int flagTime;
 int timeStatus = 0;
@@ -23,6 +25,7 @@ void delay(int Value)
 #include "lightSensor.c"
 #include "date.c"
 #include "time.c"
+#include "program.c"
 
 void SysTick_Handler(void){
   keyStatus++;
@@ -45,6 +48,9 @@ void SysTick_Handler(void){
       timeStatus = 0;
       printTime(sec);
     }
+  }
+  if(dateFlag){
+    printDate();
   }
 }
 

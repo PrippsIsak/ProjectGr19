@@ -5,6 +5,8 @@
 int readTime(char str[]);
 int calcTime(int hour, int minute, int second);
 int validateTime(int hour, int minute, int second);
+void waitForTime();
+char timeSet [6];
 int sec;
 void printTime();
 
@@ -17,6 +19,8 @@ int readTime(char str[]){
   sec = calcTime(hour, minute, second);
   if(validate == 1)
     flagTime = 1;
+  else
+    flagTime = 0;
   return validate;
 }
 int calcTime(int hour, int minute, int second){
@@ -53,4 +57,23 @@ void printTime()
   char time [] = {tenthHour+48,singleHour+48,':',tenthMinute+48,singleMinute+48,':',tenthSecond+48,singleSecond+48};
   printPos(time, 216,1);
   
+}
+void waitForTime(){
+  while(!(isPressed)){tmpKey = keypad();}
+     clearDisplay();
+    printTimeMenu();
+    int i = 0;
+    wait(500);
+    isPressed = 0;
+    while(i != 6)
+    {
+        buttonUp();
+        timeSet[i] = tmpKey+48;
+        printPosChar(timeSet[i],120+i,0);
+        i++;
+        isPressed = 0;
+        keyStatus =1;
+    }
+ wait(500);
+ tmpKey = -1;
 }

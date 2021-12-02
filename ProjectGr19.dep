@@ -159,10 +159,16 @@
         </file>
         <file>
             <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 46</file>
+                </tool>
+            </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 21 19 29 1 4 20 26 47 17 16 23 3 44 33 25 49 14 22 36 50 10 45 30 51</file>
+                    <file> 21 19 29 1 4 20 26 47 17 16 23 3 44 33 25 49 14 22 36 50 13 10 45 30 51</file>
                 </tool>
             </inputs>
         </file>

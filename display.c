@@ -350,11 +350,11 @@ void printKey(int key)
             Write_Data_2_Display(0x19);
             break;
        
-        case 10:
+        case 11:
             Write_Data_2_Display(0x10);//0
             Write_Data_2_Display(0x10);
             break;
-        case 11:
+        case 111:
             Write_Data_2_Display(0xC);//,
             Write_Data_2_Display(0xC);
             break;
