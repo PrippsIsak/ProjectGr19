@@ -11,7 +11,7 @@ float readLight;
 int main()
 {
   initEverything();
-  
+start:
     Write_Data_2_Display(0);
     Write_Data_2_Display(0);
     Write_Command_2_Display(0x24);
@@ -19,11 +19,12 @@ int main()
     
     while(1)
      { 
-       waitFor6Inputs();
+       waitForInputs();
        if(whereTo==1){
         if(readInput(inputs)==1)
           {
             printPos("Date successfully loaded!",180,0 );
+            printDate();
             break;
           }
           clearDisplay();

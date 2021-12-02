@@ -3,7 +3,7 @@
 #include "pins.c"
 
 void initKeypad();
-void waitFor6Inputs();
+void waitForInputs();
 int keypad();
 int isPressed = 0;
 int tmpKey;
@@ -14,25 +14,27 @@ void wait(int delay);
 void checkHigh();
 int whereTo;
 
-void waitFor6Inputs(){
-  int val;
+void waitForInputs(){
+  int range;
   while(!(isPressed)){tmpKey = keypad();}
    if(tmpKey == 1)
    {
     clearDisplay();
     printDateMenu();
     whereTo = 1;
+    range = 8;
    }
    if(tmpKey == 2)
    {
      clearDisplay();
     printTimeMenu();
     whereTo = 2;
+    range = 6;
    }
     int i = 0;
     isPressed = 0;
     wait(500);
-    while(i != 6)
+    while(i != range)
     {
         while(!(keyStatus%500 == 0 & isPressed == 1)){ tmpKey = keypad();}
         inputs[i] = tmpKey+48;

@@ -284,7 +284,7 @@ void printStartMenu()
   
   printPos("Press [] to setup calendar ",180 ,0 );
   printPos("Press [1] to setup Maggan ",240 ,0 );
-  printPos("Press [1] to setup Steffe ",44 ,0 );//try and error, do not know why. Ask Hazeem
+  printPos("Press [1] to setup Steffe ",44 ,1 );//try and error, do not know why. Ask Hazeem
 }
 void printTimeMenu()
 {
@@ -295,7 +295,7 @@ void printTimeMenu()
 void printDateMenu()
 {
   printPos("------ Set Date ------", 5, 0);
-  printPos("Enter Date: YY/MM/DD", 60, 0);
+  printPos("Enter Date: YYYY/MM/DD", 60, 0);
   printBack();
 }
 void printBack()
@@ -350,7 +350,7 @@ void printKey(int key)
             Write_Data_2_Display(0x19);
             break;
        
-        case 0:
+        case 10:
             Write_Data_2_Display(0x10);//0
             Write_Data_2_Display(0x10);
             break;
