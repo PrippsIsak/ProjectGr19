@@ -33,16 +33,17 @@ if(hour > 23 || hour < 0 || minute > 60 || minute < 0 || second > 60 || second <
 return 1;
 
 }
-void printTime()
+void printTime(int sec)
 {
-  int hour = (sec /3600);
-  if(hour == 24)
+  int hour = (sec /3600)%24;
+  if(sec%86400 == 0)
   {
-    dateFlag = 1;
-    day++;
+    calcDate(year, month, day);
     hour = 0;
   }
+    
   int minute = (sec / 60)%60;
+
   int dispSec = sec % 60;
   
   int tenthHour = hour/10; 
@@ -61,6 +62,8 @@ void printTime()
 void waitForTime(){
   while(!(isPressed)){tmpKey = keypad();}
      clearDisplay();
+    if(readyDate == 0)
+      printDate();
     printTimeMenu();
     int i = 0;
     wait(500);

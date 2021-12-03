@@ -1,13 +1,18 @@
 #include "at91sam3x8.h"
 #include "system_sam3x.h"
 
-
+struct LinkedList*readSensor(int timeStamp);
+void insertLast(struct LinkedList **first, struct LinkedList *el);
+void printDate();
 int keyStatus;
 int flagTime;
 int timeStatus = 0;
-double checkTemp = 0;
+float checkTemp = 0;
 int flag;
 int dateFlag = 0;
+int readyDate = -1;
+int measureFlag = 0;
+struct LinkedList * listTemprature;
 unsigned int tempStatus = 0, resetDel=0, tFlag1 =0, tFlag2 =1;  // FIXA 
 
 void delay(int Value)
@@ -26,6 +31,7 @@ void delay(int Value)
 #include "date.c"
 #include "time.c"
 #include "program.c"
+#include "LinkedList.c"
 
 void SysTick_Handler(void){
   keyStatus++;
@@ -49,9 +55,7 @@ void SysTick_Handler(void){
       printTime(sec);
     }
   }
-  if(dateFlag){
-    printDate();
-  }
+
 }
 
 

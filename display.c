@@ -19,6 +19,9 @@ void resetPointer();
 void printDateMenu();
 void clearDisplay();
 void printBack();
+void clearBack();
+void printTempMenu();
+void printData();
 
 
 unsigned char Read_Status_Display(void){
@@ -282,9 +285,10 @@ void printStartMenu()
   printPos("Press [1] to setup date ",60 ,0 );
   printPos("Press [2] to setup time ",120 ,0 );
   
-  printPos("Press [] to setup calendar ",180 ,0 );
-  printPos("Press [1] to setup Maggan ",240 ,0 );
+  printPos("Press [3] to Measure",180 ,0 );
+  printPos("Press [4] see measure data ",240 ,0 );
   printPos("Press [1] to setup Steffe ",44 ,1 );//try and error, do not know why. Ask Hazeem
+  clearBack();
 }
 void printTimeMenu()
 {
@@ -298,9 +302,30 @@ void printDateMenu()
   printPos("Enter Date: YYYY/MM/DD", 60, 0);
   printBack();
 }
+void printTempMenu()
+{
+  printPos("------ Start Temprature ------",0,0);
+  printPos("press [1] to start", 60,0);
+  printBack();
+}
 void printBack()
 {
   printPos("[*] Back",194,1);
+}
+void clearBack()
+{
+  printPos("        ",194,1);
+}
+void printData()
+{
+  clearDisplay();
+  printPos("------ Temprature data ------",0,0);
+  //print max
+  //print avg
+  //print min
+  printBack();
+  printDate();
+  waitBack();
 }
 void resetPointer()
 {

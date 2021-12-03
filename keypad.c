@@ -165,6 +165,8 @@ return value;
 void buttonUp()
 {
   while(isPressed == 0){ tmpKey = keypad();}
+  if(tmpKey == 11)
+      tmpKey = 0;
   while(isPressed == 1){keypad();}
   wait(50);
 }

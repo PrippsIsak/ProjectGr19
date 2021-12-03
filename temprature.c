@@ -7,17 +7,17 @@ void resetTemprature();
 void tempMeasure();
 
 void TCO_Handler(void);
-void SysTick_Handler(void);
-void write_temp(double temprature);
+//void SysTick_Handler(void);
+void write_temp(float temprature);
 
 
 
-double calcTemp();
+float calcTemp();
 unsigned int fallingCheck = 0;
 void clearDisplay();
 
-
-void writeTempWhenReady(){
+float writeTempWhenReady(){
+  while(1){
     if(tFlag2){
       tFlag2=0;
       tempMeasure();
@@ -26,10 +26,11 @@ void writeTempWhenReady(){
     if(flag == 1) //when it has read a temp
     {
       checkTemp = calcTemp();
-      write_temp(checkTemp);
       flag=0;
       tFlag2=1;
+      return checkTemp;
     }}
+  }
 }
 void initTemprature()
 {
@@ -79,18 +80,18 @@ void TC0_Handler(void)
   flag = 1;
 }
 
-double calcTemp()
+float calcTemp()
 {
   int ra = *AT91C_TC0_RA;
   int rb = *AT91C_TC0_RB;
   
-  double time = (double)(rb-ra);
+  float time = (float)(rb-ra);
   checkTemp = (time/210)-273.15; // 210 = 5 * 42
   flag=0;
   return checkTemp; //waveform = 0, read only, reading register a and b
 }
 
-void write_temp(double temprature)
+void write_temp(float temprature)
 {
     int tenthDigit =(int)temprature/10; //Gets first digit from number
     int singleDigit=(int)temprature%10; //gets second digit from nmber

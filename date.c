@@ -5,7 +5,7 @@
 int readInput(char str[]);
 int validateDate(int year, int month, int day);
 int checkLeap(int year);
-void printDate();
+
 void waitForDate();
 char dateSet [8];
 int day;
@@ -67,7 +67,19 @@ int checkLeap(int year){
 void calcDate(int currentYear, int currentMonth, int currentDay)
 {
   dateFlag = 0;
-  if(currentDay == 28 & currentMonth == 2) // TODO: Flytta runt lite
+  if((currentDay == 31) & (month == 1 || month == 3 ||month == 5 ||month == 7 || month == 8 || month == 10 || month == 12))
+  {
+    day = 1;
+    if(currentMonth == 12)
+    {
+      month = 1;
+      year++;
+    }
+    else
+      month++;
+  }
+  
+  else if(currentDay == 28 & currentMonth == 2) // TODO: Flytta runt lite
   {
     if(checkLeap(currentYear) == 1)
       day = 29;
@@ -83,24 +95,9 @@ void calcDate(int currentYear, int currentMonth, int currentDay)
     day = 1;
     month = 3;
   }
-  else if((currentDay == 30) & ( month == 4 || month == 6 || month == 9 || month == 11))
-  {
-    month++;
-    day = 1;
-  }
-  else if((currentDay == 31) & (month == 1 || month == 3 ||month == 5 ||month == 7 || month == 8 || month == 10 || month == 12))
-  {
-    day = 1;
-    if(currentMonth == 12)
-    {
-      month = 1;
-      year++;
-    }
-    else
-      month++;
-  }
   else 
     day++;
+  printDate();
 }
 void printDate()
 {
@@ -121,7 +118,12 @@ void printDate()
 }
 void waitForDate(){
   while(!(isPressed)){tmpKey = keypad();}  
+  
     clearDisplay();
+  
+    if(readyDate == 0)// to always print the date whereever we are if date has been set
+       printDate();
+    
     printDateMenu();
     int i = 0;
     wait(500);

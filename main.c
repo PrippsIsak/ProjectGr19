@@ -19,6 +19,10 @@ int main()
     
     while(1)
      { 
+         if(sec%60 == 0 & measureFlag == 1)
+  {
+    insertLast(&listTemprature,readSensor(sec));
+  }
        if(readyDate == 1)
        {
          printDate();
@@ -29,6 +33,8 @@ int main()
          startDate();
        if(key == 2)
          startTime();
+       if(key == 3)
+         startMeasure();
      }
   return 0;
 }
@@ -55,6 +61,8 @@ void initEverything(){
     // Temprature
     SysTick_Config(SystemCoreClock*0.001); //Slow down the clock
     initTemprature();
+    tempMeasure();
+    listTemprature = NULL;
 }
 
 

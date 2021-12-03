@@ -2,8 +2,7 @@
 #include "system_sam3x.h"
 void waitForBack();
 void startDate();
-int readyDate = -1;
-
+void startMeasure();
 void startDate()
 {
   if(readyDate == 0)
@@ -42,6 +41,22 @@ void startTime()
      }
   waitForBack();
   readyDate = 1;
+}
+void startMeasure()
+{
+  clearDisplay();
+  printTempMenu();
+  tmpKey = keypad();
+  while(tmpKey != 1){tmpKey = keypad();}
+  buttonUp();
+  if(readyDate > -1 & flagTime == 1)
+  {
+    measureFlag = 1;
+    printPos("measure has started",120,0);
+  }
+  else
+    printPos("Time and date is not set", 120,0);
+  waitForBack();
 }
 void waitForBack()
 {
