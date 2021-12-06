@@ -3,15 +3,23 @@
 
 struct LinkedList*readSensor(int timeStamp);
 void insertLast(struct LinkedList **first, struct LinkedList *el);
+float findMax(struct LinkedList *first);
+float findMin(struct LinkedList *first);
 void printDate();
 int keyStatus;
+int printDataFlag = 0;
 int flagTime;
+int size = 0;
 int timeStatus = 0;
 float checkTemp = 0;
 int flag;
 int dateFlag = 0;
 int readyDate = -1;
-int measureFlag = 0;
+int measureFlag = -1;
+float temprature = 0;
+float totTemp = 0;
+int minStamp = 0;
+int maxStamp = 0;
 struct LinkedList * listTemprature;
 unsigned int tempStatus = 0, resetDel=0, tFlag1 =0, tFlag2 =1;  // FIXA 
 
@@ -37,6 +45,7 @@ void SysTick_Handler(void){
   keyStatus++;
   if(keyStatus == 1000)
     keyStatus = 1;
+    
   if(tFlag1){
     resetDel++;
   }
@@ -44,7 +53,7 @@ void SysTick_Handler(void){
     resetDel=0;
     tFlag1=0;
   }
-  if(flagTime ==1)//start
+  if(flagTime==1)//start
   {
     timeStatus++;
     
@@ -52,7 +61,7 @@ void SysTick_Handler(void){
     {
       sec++;
       timeStatus = 0;
-      printTime(sec);
+      printTime(sec,216,1);
     }
   }
 

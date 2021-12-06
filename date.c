@@ -121,7 +121,7 @@ void waitForDate(){
   
     clearDisplay();
   
-    if(readyDate == 0)// to always print the date whereever we are if date has been set
+    if(readyDate == 0)// to allways print the date whereever we are if date has been set
        printDate();
     
     printDateMenu();

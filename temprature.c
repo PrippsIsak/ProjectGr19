@@ -5,12 +5,10 @@
 void initTemprature();
 void resetTemprature();
 void tempMeasure();
+void printTemprature(float temp, int x, int y);
 
 void TCO_Handler(void);
-//void SysTick_Handler(void);
-void write_temp(float temprature);
-
-
+void SysTick_Handler(void);
 
 float calcTemp();
 unsigned int fallingCheck = 0;
@@ -25,10 +23,10 @@ float writeTempWhenReady(){
       
     if(flag == 1) //when it has read a temp
     {
-      checkTemp = calcTemp();
+      temprature = calcTemp();
       flag=0;
       tFlag2=1;
-      return checkTemp;
+      return temprature;
     }}
   }
 }
@@ -57,8 +55,24 @@ void resetTemprature(){
   *AT91C_PIOB_SODR = pin2; //enable outputs
   *AT91C_PIOB_CODR = pin2; //creating the pulse, by enable and disable temp
   tFlag1 =1;
+  
   while(tFlag1);
   *AT91C_PIOB_SODR = pin2;
+  
+}
+void printTemprature(float temp, int x, int y)
+{
+  char tempArray [4] = {48, 48, 48, 48};
+  int tenthTemp = (int)temp/10;
+  int singleTemp = (int)temp%10;
+  int decimalTemp = (int)(temp*10)%10;
+  
+  tempArray[0] = tenthTemp+48;
+  tempArray[1] = singleTemp+48;
+  tempArray[2] = ',';
+  tempArray[3] = decimalTemp+48;
+  
+  printPos(tempArray,x,y);
   
 }
 void tempMeasure()
@@ -89,27 +103,4 @@ float calcTemp()
   checkTemp = (time/210)-273.15; // 210 = 5 * 42
   flag=0;
   return checkTemp; //waveform = 0, read only, reading register a and b
-}
-
-void write_temp(float temprature)
-{
-    int tenthDigit =(int)temprature/10; //Gets first digit from number
-    int singleDigit=(int)temprature%10; //gets second digit from nmber
-    int decimal=(int)(temprature*10)%10; //gets first decimal digit from number
-    
-    //Set start pos
-    Write_Data_2_Display(0x0);
-    Write_Data_2_Display(0x0);
-    
-    Write_Data_2_Display(0x00); // X-axis
-    Write_Data_2_Display(0x00); // Y-axis
-    Write_Command_2_Display(0x24); // Start position
-   
-    printKey(tenthDigit);
-    printKey(singleDigit);
-    printKey(11);
-    printKey(decimal);
-    printKey(12);
-    printKey(13);
-    printKey(14);
 }

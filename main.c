@@ -10,7 +10,7 @@ float readLight;
 
 int main()
 {
-  initEverything();
+    initEverything();
     Write_Data_2_Display(0);
     Write_Data_2_Display(0);
     Write_Command_2_Display(0x24);
@@ -19,10 +19,8 @@ int main()
     
     while(1)
      { 
-         if(sec%60 == 0 & measureFlag == 1)
-  {
-    insertLast(&listTemprature,readSensor(sec));
-  }
+       if(measureFlag == 1)
+         measureFunc();
        if(readyDate == 1)
        {
          printDate();
@@ -34,7 +32,11 @@ int main()
        if(key == 2)
          startTime();
        if(key == 3)
+       { 
          startMeasure();
+       }
+       if(key == 4)
+         startData();
      }
   return 0;
 }
@@ -60,9 +62,10 @@ void initEverything(){
     
     // Temprature
     SysTick_Config(SystemCoreClock*0.001); //Slow down the clock
+   
     initTemprature();
-    tempMeasure();
-    listTemprature = NULL;
+    //listTemprature = NULL;
+    freeMemory(&listTemprature);
 }
 
 

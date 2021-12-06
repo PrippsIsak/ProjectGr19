@@ -24,6 +24,7 @@ void printTempMenu();
 void printData();
 
 
+
 unsigned char Read_Status_Display(void){
 
     unsigned char temp;
@@ -306,6 +307,7 @@ void printTempMenu()
 {
   printPos("------ Start Temprature ------",0,0);
   printPos("press [1] to start", 60,0);
+  printPos("The temprature is",120,0);
   printBack();
 }
 void printBack()
@@ -320,12 +322,14 @@ void printData()
 {
   clearDisplay();
   printPos("------ Temprature data ------",0,0);
-  //print max
+  printPos("Max temprature is: ",60,0);
+  printPos("Average temprature is: ",120,0);
+  printPos("Min temprature is: ",180,0);
   //print avg
   //print min
   printBack();
   printDate();
-  waitBack();
+  //waitBack();
 }
 void resetPointer()
 {

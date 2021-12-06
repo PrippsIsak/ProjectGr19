@@ -3,6 +3,9 @@
 void waitForBack();
 void startDate();
 void startMeasure();
+void measureFunc();
+void startData();
+
 void startDate()
 {
   if(readyDate == 0)
@@ -57,6 +60,50 @@ void startMeasure()
   else
     printPos("Time and date is not set", 120,0);
   waitForBack();
+}
+void measureFunc()
+{  
+   if(sec%60 == 0 && measureFlag == 1)
+    {
+      writeTempWhenReady();
+      insertLast(&listTemprature,readSensor(sec));
+      totTemp += temprature;
+      printDataFlag = 1;
+      measureFlag = 0;
+      
+    }
+}
+void startData()
+{
+  clearDisplay();
+  printData();
+  printBack();
+  while(tmpKey != 10){
+    measureFunc();
+    if(printDataFlag == 1){
+      
+      printTemprature(findMax(listTemprature),79,0);
+      delay(100);
+      printTemprature(findMin(listTemprature),199,0);
+      
+      float avg = totTemp/(float)size;
+      delay(100);
+      printTemprature(avg,143,0);
+      delay(100);
+      printPos("Time stamp: ", 240, 0);
+      delay(100);
+      printTime(maxStamp, 252, 0);
+      delay(100);
+      printTime(minStamp,44,1);
+      delay(100);
+      printDataFlag = 0;
+    }
+    tmpKey = keypad();
+  }
+  tmpKey = 0;
+  clearDisplay();
+  printDate();
+  printStartMenu();
 }
 void waitForBack()
 {

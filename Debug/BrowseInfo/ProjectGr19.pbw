@@ -114241,451 +114241,843 @@
     "scope": null
   },
   {
-    "ID": "c:stdio.h@99@macro@_STDIO",
-    "What": "MacroDef",
+    "ID": "c:@light2",
+    "What": "Variable",
     "defdec": "Def",
-    "display": "_STDIO",
+    "display": "light2",
     "location": {
-      "column": "9",
-      "line": "4",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+      "column": "7",
+      "line": "5",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
     },
-    "name": "_STDIO",
-    "origin": "system_include",
+    "name": "light2",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:stdio.h@375@macro@NULL",
-    "What": "MacroDef",
+    "ID": "c:@lightFlag",
+    "What": "Variable",
     "defdec": "Def",
-    "display": "NULL",
+    "display": "lightFlag",
     "location": {
-      "column": "11",
+      "column": "5",
+      "line": "6",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
+    },
+    "name": "lightFlag",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@light",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "light",
+    "location": {
+      "column": "7",
+      "line": "7",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
+    },
+    "name": "light",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@light1",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "light1",
+    "location": {
+      "column": "7",
+      "line": "8",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
+    },
+    "name": "light1",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@flag1",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "flag1",
+    "location": {
+      "column": "5",
+      "line": "9",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
+    },
+    "name": "flag1",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@flag2",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "flag2",
+    "location": {
+      "column": "5",
+      "line": "10",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
+    },
+    "name": "flag2",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@calcLight",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "float calcLight(void)",
+    "location": {
+      "column": "7",
+      "line": "12",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
+    },
+    "name": "calcLight",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@initLight",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void initLight(void)",
+    "location": {
+      "column": "6",
+      "line": "13",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
+    },
+    "name": "initLight",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ADC_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void ADC_Handler(void)",
+    "location": {
+      "column": "6",
+      "line": "14",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
+    },
+    "name": "ADC_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void init(void)",
+    "location": {
+      "column": "6",
+      "line": "16",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
+    },
+    "name": "init",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ADC_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void ADC_Handler(void)",
+    "location": {
+      "column": "6",
+      "line": "17",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
+    },
+    "name": "ADC_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@writeLight",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void writeLight(float)",
+    "location": {
+      "column": "6",
+      "line": "18",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
+    },
+    "name": "writeLight",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@initLight",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void initLight(void)",
+    "location": {
+      "column": "6",
+      "line": "22",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
+    },
+    "name": "initLight",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@calcLight",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "float calcLight(void)",
+    "location": {
+      "column": "7",
+      "line": "47",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
+    },
+    "name": "calcLight",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ADC_Handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void ADC_Handler(void)",
+    "location": {
+      "column": "6",
+      "line": "76",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
+    },
+    "name": "ADC_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@writeLight",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void writeLight(float)",
+    "location": {
+      "column": "6",
+      "line": "90",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
+    },
+    "name": "writeLight",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:lightSensor.c@2196@F@writeLight@singleDigit",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "singleDigit",
+    "location": {
+      "column": "9",
+      "line": "93",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
+    },
+    "name": "singleDigit",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:lightSensor.c@2265@F@writeLight@decimal",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "decimal",
+    "location": {
+      "column": "9",
+      "line": "94",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
+    },
+    "name": "decimal",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:lightSensor.c@2346@F@writeLight@decimal2",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "decimal2",
+    "location": {
+      "column": "9",
+      "line": "95",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
+    },
+    "name": "decimal2",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:lightSensor.c@2390@F@writeLight@decimal3",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "decimal3",
+    "location": {
+      "column": "9",
+      "line": "96",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
+    },
+    "name": "decimal3",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@bus",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "bus",
+    "location": {
+      "column": "5",
+      "line": "5",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+    },
+    "name": "bus",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Write_Data_2_Display",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void Write_Data_2_Display(unsigned char)",
+    "location": {
+      "column": "6",
+      "line": "7",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+    },
+    "name": "Write_Data_2_Display",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Write_Command_2_Display",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void Write_Command_2_Display(unsigned char)",
+    "location": {
+      "column": "6",
+      "line": "8",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+    },
+    "name": "Write_Command_2_Display",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@dispGraphics",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void dispGraphics(void)",
+    "location": {
+      "column": "6",
+      "line": "9",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+    },
+    "name": "dispGraphics",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@printKey",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void printKey(int)",
+    "location": {
+      "column": "6",
+      "line": "10",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+    },
+    "name": "printKey",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@initDisplay",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void initDisplay(void)",
+    "location": {
+      "column": "6",
+      "line": "11",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+    },
+    "name": "initDisplay",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@startMenu",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void startMenu(void)",
+    "location": {
+      "column": "6",
+      "line": "13",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+    },
+    "name": "startMenu",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Read_Status_Display",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "unsigned char Read_Status_Display(void)",
+    "location": {
+      "column": "15",
+      "line": "14",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+    },
+    "name": "Read_Status_Display",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@printChar",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void printChar(char)",
+    "location": {
+      "column": "6",
+      "line": "15",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+    },
+    "name": "printChar",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@printString",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void printString(char *)",
+    "location": {
+      "column": "6",
+      "line": "16",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+    },
+    "name": "printString",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@printPos",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void printPos(char *, char, char)",
+    "location": {
+      "column": "6",
+      "line": "17",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+    },
+    "name": "printPos",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@resetPointer",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void resetPointer(void)",
+    "location": {
+      "column": "6",
+      "line": "18",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+    },
+    "name": "resetPointer",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@printDateMenu",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void printDateMenu(void)",
+    "location": {
+      "column": "6",
       "line": "19",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
     },
-    "name": "NULL",
-    "origin": "system_include",
+    "name": "printDateMenu",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:stdio.h@3283@macro@EOF",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "EOF",
+    "ID": "c:@F@clearDisplay",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void clearDisplay(void)",
     "location": {
-      "column": "9",
-      "line": "103",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+      "column": "6",
+      "line": "20",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
     },
-    "name": "EOF",
-    "origin": "system_include",
+    "name": "clearDisplay",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:stdio.h@3315@macro@SEEK_SET",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "SEEK_SET",
+    "ID": "c:@F@printBack",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void printBack(void)",
     "location": {
-      "column": "9",
-      "line": "105",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+      "column": "6",
+      "line": "21",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
     },
-    "name": "SEEK_SET",
-    "origin": "system_include",
+    "name": "printBack",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:stdio.h@3342@macro@SEEK_CUR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "SEEK_CUR",
+    "ID": "c:@F@clearBack",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void clearBack(void)",
     "location": {
-      "column": "9",
-      "line": "106",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+      "column": "6",
+      "line": "22",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
     },
-    "name": "SEEK_CUR",
-    "origin": "system_include",
+    "name": "clearBack",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:stdio.h@3369@macro@SEEK_END",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "SEEK_END",
+    "ID": "c:@F@printTempMenu",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void printTempMenu(void)",
     "location": {
-      "column": "9",
-      "line": "107",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+      "column": "6",
+      "line": "23",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
     },
-    "name": "SEEK_END",
-    "origin": "system_include",
+    "name": "printTempMenu",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:stdio.h@T@fpos_t",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "_Fpost",
+    "ID": "c:@F@printData",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void printData(void)",
     "location": {
-      "column": "16",
-      "line": "110",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+      "column": "6",
+      "line": "24",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
     },
-    "name": "fpos_t",
-    "origin": "system_include",
+    "name": "printData",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:stdio.h@3737@macro@__PRINTFPR",
-    "What": "MacroDef",
+    "ID": "c:@F@Read_Status_Display",
+    "What": "Function",
     "defdec": "Def",
-    "display": "__PRINTFPR",
+    "display": "unsigned char Read_Status_Display(void)",
+    "location": {
+      "column": "15",
+      "line": "28",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+    },
+    "name": "Read_Status_Display",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:display.c@675@F@Read_Status_Display@temp",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "temp",
+    "location": {
+      "column": "19",
+      "line": "30",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+    },
+    "name": "temp",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Write_Command_2_Display",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void Write_Command_2_Display(unsigned char)",
+    "location": {
+      "column": "6",
+      "line": "71",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+    },
+    "name": "Write_Command_2_Display",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Write_Data_2_Display",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void Write_Data_2_Display(unsigned char)",
+    "location": {
+      "column": "6",
+      "line": "124",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+    },
+    "name": "Write_Data_2_Display",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@dispGraphics",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void dispGraphics(void)",
+    "location": {
+      "column": "6",
+      "line": "170",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+    },
+    "name": "dispGraphics",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@initDisplay",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void initDisplay(void)",
+    "location": {
+      "column": "6",
+      "line": "196",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+    },
+    "name": "initDisplay",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@clearDisplay",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void clearDisplay(void)",
+    "location": {
+      "column": "6",
+      "line": "244",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+    },
+    "name": "clearDisplay",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:display.c@6685@F@clearDisplay@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
     "location": {
       "column": "11",
-      "line": "126",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+      "line": "250",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
     },
-    "name": "__PRINTFPR",
-    "origin": "system_include",
+    "name": "i",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:stdio.h@3934@macro@__SCANFPR",
-    "What": "MacroDef",
+    "ID": "c:@F@printString",
+    "What": "Function",
     "defdec": "Def",
-    "display": "__SCANFPR",
+    "display": "void printString(char *)",
     "location": {
-      "column": "11",
-      "line": "129",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+      "column": "6",
+      "line": "255",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
     },
-    "name": "__SCANFPR",
-    "origin": "system_include",
+    "name": "printString",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:stdio.h@4131@macro@__SCANFSPR",
-    "What": "MacroDef",
+    "ID": "c:display.c@6778@F@printString@n",
+    "What": "Variable",
     "defdec": "Def",
-    "display": "__SCANFSPR",
+    "display": "n",
     "location": {
-      "column": "11",
-      "line": "132",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+      "column": "7",
+      "line": "257",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
     },
-    "name": "__SCANFSPR",
-    "origin": "system_include",
+    "name": "n",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:stdio.h@4448@macro@__DEPREC_PRINTF",
-    "What": "MacroDef",
+    "ID": "c:@F@printChar",
+    "What": "Function",
     "defdec": "Def",
-    "display": "__DEPREC_PRINTF",
+    "display": "void printChar(char)",
     "location": {
-      "column": "9",
-      "line": "141",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+      "column": "6",
+      "line": "263",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
     },
-    "name": "__DEPREC_PRINTF",
-    "origin": "system_include",
+    "name": "printChar",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:stdio.h@4493@macro@__DEPREC_SCANF",
-    "What": "MacroDef",
+    "ID": "c:@F@printPosChar",
+    "What": "Function",
     "defdec": "Def",
-    "display": "__DEPREC_SCANF",
+    "display": "void printPosChar(char, char, char)",
     "location": {
-      "column": "9",
-      "line": "142",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+      "column": "6",
+      "line": "268",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
     },
-    "name": "__DEPREC_SCANF",
-    "origin": "system_include",
+    "name": "printPosChar",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@__gets",
+    "ID": "c:@F@printPos",
     "What": "Function",
-    "defdec": "Dec",
-    "display": "char * __gets(char *, int)",
+    "defdec": "Def",
+    "display": "void printPos(char *, char, char)",
     "location": {
-      "column": "37",
-      "line": "197",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+      "column": "6",
+      "line": "275",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
     },
-    "name": "__gets",
-    "origin": "system_include",
+    "name": "printPos",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@gets",
+    "ID": "c:@F@printStartMenu",
     "What": "Function",
-    "defdec": "Dec",
-    "display": "char * gets(char *)",
+    "defdec": "Def",
+    "display": "void printStartMenu(void)",
     "location": {
-      "column": "37",
-      "line": "198",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+      "column": "6",
+      "line": "282",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
     },
-    "name": "gets",
-    "origin": "system_include",
+    "name": "printStartMenu",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@perror",
+    "ID": "c:@F@printTimeMenu",
     "What": "Function",
-    "defdec": "Dec",
-    "display": "void perror(const char *)",
+    "defdec": "Def",
+    "display": "void printTimeMenu(void)",
     "location": {
-      "column": "39",
-      "line": "200",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+      "column": "6",
+      "line": "294",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
     },
-    "name": "perror",
-    "origin": "system_include",
+    "name": "printTimeMenu",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@printf",
+    "ID": "c:@F@printDateMenu",
     "What": "Function",
-    "defdec": "Dec",
-    "display": "int printf(const char *restrict, ...)",
+    "defdec": "Def",
+    "display": "void printDateMenu(void)",
     "location": {
-      "column": "39",
-      "line": "201",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+      "column": "6",
+      "line": "300",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
     },
-    "name": "printf",
-    "origin": "system_include",
+    "name": "printDateMenu",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@puts",
+    "ID": "c:@F@printTempMenu",
     "What": "Function",
-    "defdec": "Dec",
-    "display": "int puts(const char *)",
+    "defdec": "Def",
+    "display": "void printTempMenu(void)",
     "location": {
-      "column": "39",
-      "line": "202",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+      "column": "6",
+      "line": "306",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
     },
-    "name": "puts",
-    "origin": "system_include",
+    "name": "printTempMenu",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@scanf",
+    "ID": "c:@F@printBack",
     "What": "Function",
-    "defdec": "Dec",
-    "display": "int scanf(const char *restrict, ...)",
+    "defdec": "Def",
+    "display": "void printBack(void)",
     "location": {
-      "column": "39",
-      "line": "203",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+      "column": "6",
+      "line": "313",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
     },
-    "name": "scanf",
-    "origin": "system_include",
+    "name": "printBack",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@sprintf",
+    "ID": "c:@F@clearBack",
     "What": "Function",
-    "defdec": "Dec",
-    "display": "int sprintf(char *restrict, const char *restrict, ...)",
+    "defdec": "Def",
+    "display": "void clearBack(void)",
     "location": {
-      "column": "39",
-      "line": "204",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+      "column": "6",
+      "line": "317",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
     },
-    "name": "sprintf",
-    "origin": "system_include",
+    "name": "clearBack",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@sscanf",
+    "ID": "c:@F@printData",
     "What": "Function",
-    "defdec": "Dec",
-    "display": "int sscanf(const char *restrict, const char *restrict, ...)",
+    "defdec": "Def",
+    "display": "void printData(void)",
     "location": {
-      "column": "39",
-      "line": "206",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+      "column": "6",
+      "line": "321",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
     },
-    "name": "sscanf",
-    "origin": "system_include",
+    "name": "printData",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@__ungetchar",
+    "ID": "c:@F@resetPointer",
     "What": "Function",
-    "defdec": "Dec",
-    "display": "int __ungetchar(int)",
+    "defdec": "Def",
+    "display": "void resetPointer(void)",
     "location": {
-      "column": "39",
-      "line": "209",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+      "column": "6",
+      "line": "334",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
     },
-    "name": "__ungetchar",
-    "origin": "system_include",
+    "name": "resetPointer",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@vprintf",
+    "ID": "c:@F@printKey",
     "What": "Function",
-    "defdec": "Dec",
-    "display": "int vprintf(const char *restrict, __Va_list)",
+    "defdec": "Def",
+    "display": "void printKey(int)",
     "location": {
-      "column": "39",
-      "line": "210",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+      "column": "6",
+      "line": "341",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
     },
-    "name": "vprintf",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@vscanf",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int vscanf(const char *restrict, __Va_list)",
-    "location": {
-      "column": "37",
-      "line": "213",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "vscanf",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@vsscanf",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int vsscanf(const char *restrict, const char *restrict, __Va_list)",
-    "location": {
-      "column": "37",
-      "line": "214",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "vsscanf",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@vsprintf",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int vsprintf(char *restrict, const char *restrict, __Va_list)",
-    "location": {
-      "column": "37",
-      "line": "217",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "vsprintf",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@__write_array",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "size_t __write_array(const void *, size_t, size_t)",
-    "location": {
-      "column": "35",
-      "line": "220",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "__write_array",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@snprintf",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int snprintf(char *restrict, size_t, const char *restrict, ...)",
-    "location": {
-      "column": "38",
-      "line": "222",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "snprintf",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@vsnprintf",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int vsnprintf(char *restrict, size_t, const char *restrict, __Va_list)",
-    "location": {
-      "column": "38",
-      "line": "224",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "vsnprintf",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@getchar",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int getchar(void)",
-    "location": {
-      "column": "35",
-      "line": "229",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "getchar",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@putchar",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int putchar(int)",
-    "location": {
-      "column": "35",
-      "line": "230",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "putchar",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@remove",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int remove(const char *)",
-    "location": {
-      "column": "35",
-      "line": "233",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "remove",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@rename",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int rename(const char *, const char *)",
-    "location": {
-      "column": "35",
-      "line": "234",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "rename",
-    "origin": "system_include",
+    "name": "printKey",
+    "origin": "project_file",
     "scope": null
   },
   {
@@ -115025,7 +115417,7 @@
     "scope": null
   },
   {
-    "ID": "c:date.c@2943@F@waitForDate@i",
+    "ID": "c:date.c@2944@F@waitForDate@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
@@ -115039,870 +115431,733 @@
     "scope": null
   },
   {
-    "ID": "c:@bus",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "bus",
+    "ID": "c:@S@LinkedList",
+    "What": "Struct",
+    "defdec": "Dec",
+    "display": "LinkedList",
     "location": {
-      "column": "5",
-      "line": "5",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+      "column": "8",
+      "line": "4",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
     },
-    "name": "bus",
-    "origin": "project_file",
+    "members": [],
+    "name": "LinkedList",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:@F@Write_Data_2_Display",
+    "ID": "c:@F@readSensor",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void Write_Data_2_Display(unsigned char)",
+    "display": "struct LinkedList * readSensor(int)",
+    "location": {
+      "column": "19",
+      "line": "4",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
+    },
+    "name": "readSensor",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@insertLast",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void insertLast(struct LinkedList **, struct LinkedList *)",
     "location": {
       "column": "6",
-      "line": "7",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+      "line": "5",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
     },
-    "name": "Write_Data_2_Display",
-    "origin": "project_file",
+    "name": "insertLast",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:@F@Write_Command_2_Display",
+    "ID": "c:@F@findMax",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void Write_Command_2_Display(unsigned char)",
+    "display": "float findMax(struct LinkedList *)",
+    "location": {
+      "column": "7",
+      "line": "6",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
+    },
+    "name": "findMax",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@findMin",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "float findMin(struct LinkedList *)",
+    "location": {
+      "column": "7",
+      "line": "7",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
+    },
+    "name": "findMin",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@printDate",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void printDate(void)",
     "location": {
       "column": "6",
       "line": "8",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
     },
-    "name": "Write_Command_2_Display",
-    "origin": "project_file",
+    "name": "printDate",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:@F@dispGraphics",
+    "ID": "c:@keyStatus",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "keyStatus",
+    "location": {
+      "column": "5",
+      "line": "9",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
+    },
+    "name": "keyStatus",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@printDataFlag",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "printDataFlag",
+    "location": {
+      "column": "5",
+      "line": "10",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
+    },
+    "name": "printDataFlag",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@flagTime",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "flagTime",
+    "location": {
+      "column": "5",
+      "line": "11",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
+    },
+    "name": "flagTime",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@size",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "size",
+    "location": {
+      "column": "5",
+      "line": "12",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
+    },
+    "name": "size",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@timeStatus",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "timeStatus",
+    "location": {
+      "column": "5",
+      "line": "13",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
+    },
+    "name": "timeStatus",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@checkTemp",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "checkTemp",
+    "location": {
+      "column": "7",
+      "line": "14",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
+    },
+    "name": "checkTemp",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@flag",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "flag",
+    "location": {
+      "column": "5",
+      "line": "15",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
+    },
+    "name": "flag",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@dateFlag",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "dateFlag",
+    "location": {
+      "column": "5",
+      "line": "16",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
+    },
+    "name": "dateFlag",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@readyDate",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "readyDate",
+    "location": {
+      "column": "5",
+      "line": "17",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
+    },
+    "name": "readyDate",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@measureFlag",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "measureFlag",
+    "location": {
+      "column": "5",
+      "line": "18",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
+    },
+    "name": "measureFlag",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@temprature",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "temprature",
+    "location": {
+      "column": "7",
+      "line": "19",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
+    },
+    "name": "temprature",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@totTemp",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "totTemp",
+    "location": {
+      "column": "7",
+      "line": "20",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
+    },
+    "name": "totTemp",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@minStamp",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "minStamp",
+    "location": {
+      "column": "5",
+      "line": "21",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
+    },
+    "name": "minStamp",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@maxStamp",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "maxStamp",
+    "location": {
+      "column": "5",
+      "line": "22",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
+    },
+    "name": "maxStamp",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@listTemprature",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "listTemprature",
+    "location": {
+      "column": "21",
+      "line": "23",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
+    },
+    "name": "listTemprature",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@tempStatus",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "tempStatus",
+    "location": {
+      "column": "14",
+      "line": "24",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
+    },
+    "name": "tempStatus",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@resetDel",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "resetDel",
+    "location": {
+      "column": "30",
+      "line": "24",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
+    },
+    "name": "resetDel",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@tFlag1",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "tFlag1",
+    "location": {
+      "column": "42",
+      "line": "24",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
+    },
+    "name": "tFlag1",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@tFlag2",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "tFlag2",
+    "location": {
+      "column": "53",
+      "line": "24",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
+    },
+    "name": "tFlag2",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@delay",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void delay(int)",
+    "location": {
+      "column": "6",
+      "line": "26",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
+    },
+    "name": "delay",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:head.h@682@F@delay@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "9",
+      "line": "28",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
+    },
+    "name": "i",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SysTick_Handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SysTick_Handler(void)",
+    "location": {
+      "column": "6",
+      "line": "44",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
+    },
+    "name": "SysTick_Handler",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@freeMemory",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void dispGraphics(void)",
+    "display": "void freeMemory(struct LinkedList **)",
     "location": {
       "column": "6",
       "line": "9",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
     },
-    "name": "dispGraphics",
+    "name": "freeMemory",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@printKey",
+    "ID": "c:@F@isMember",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void printKey(int)",
+    "display": "int isMember(struct LinkedList **, struct LinkedList *)",
     "location": {
-      "column": "6",
+      "column": "5",
       "line": "10",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
     },
-    "name": "printKey",
+    "name": "isMember",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@initDisplay",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void initDisplay(void)",
+    "ID": "c:@S@LinkedList",
+    "What": "Struct",
+    "defdec": "Def",
+    "display": "LinkedList",
     "location": {
-      "column": "6",
-      "line": "11",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
-    },
-    "name": "initDisplay",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@startMenu",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void startMenu(void)",
-    "location": {
-      "column": "6",
-      "line": "13",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
-    },
-    "name": "startMenu",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Read_Status_Display",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "unsigned char Read_Status_Display(void)",
-    "location": {
-      "column": "15",
-      "line": "14",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
-    },
-    "name": "Read_Status_Display",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@printChar",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void printChar(char)",
-    "location": {
-      "column": "6",
+      "column": "8",
       "line": "15",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
     },
-    "name": "printChar",
+    "members": [
+      {
+        "ID": "c:@S@LinkedList@FI@id",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "id",
+        "location": {
+          "column": "9",
+          "line": "17",
+          "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
+        },
+        "name": "id",
+        "origin": "project_file",
+        "scope": "LinkedList"
+      },
+      {
+        "ID": "c:@S@LinkedList@FI@tempature",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "tempature",
+        "location": {
+          "column": "11",
+          "line": "18",
+          "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
+        },
+        "name": "tempature",
+        "origin": "project_file",
+        "scope": "LinkedList"
+      },
+      {
+        "ID": "c:@S@LinkedList@FI@next",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "next",
+        "location": {
+          "column": "23",
+          "line": "19",
+          "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
+        },
+        "name": "next",
+        "origin": "project_file",
+        "scope": "LinkedList"
+      }
+    ],
+    "name": "LinkedList",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@printString",
+    "ID": "c:@F@insertLast",
     "What": "Function",
-    "defdec": "Dec",
-    "display": "void printString(char *)",
-    "location": {
-      "column": "6",
-      "line": "16",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
-    },
-    "name": "printString",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@printPos",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void printPos(char *, char, char)",
-    "location": {
-      "column": "6",
-      "line": "17",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
-    },
-    "name": "printPos",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@resetPointer",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void resetPointer(void)",
-    "location": {
-      "column": "6",
-      "line": "18",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
-    },
-    "name": "resetPointer",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@printDateMenu",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void printDateMenu(void)",
-    "location": {
-      "column": "6",
-      "line": "19",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
-    },
-    "name": "printDateMenu",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@clearDisplay",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void clearDisplay(void)",
-    "location": {
-      "column": "6",
-      "line": "20",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
-    },
-    "name": "clearDisplay",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@printBack",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void printBack(void)",
+    "defdec": "Def",
+    "display": "void insertLast(struct LinkedList **, struct LinkedList *)",
     "location": {
       "column": "6",
       "line": "21",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
     },
-    "name": "printBack",
+    "name": "insertLast",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@clearBack",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void clearBack(void)",
-    "location": {
-      "column": "6",
-      "line": "22",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
-    },
-    "name": "clearBack",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@printTempMenu",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void printTempMenu(void)",
-    "location": {
-      "column": "6",
-      "line": "23",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
-    },
-    "name": "printTempMenu",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@printData",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void printData(void)",
-    "location": {
-      "column": "6",
-      "line": "24",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
-    },
-    "name": "printData",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Read_Status_Display",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "unsigned char Read_Status_Display(void)",
-    "location": {
-      "column": "15",
-      "line": "27",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
-    },
-    "name": "Read_Status_Display",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:display.c@673@F@Read_Status_Display@temp",
+    "ID": "c:LinkedList.c@463@F@insertLast@temp",
     "What": "Variable",
     "defdec": "Def",
     "display": "temp",
     "location": {
-      "column": "19",
-      "line": "29",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+      "column": "24",
+      "line": "27",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
     },
     "name": "temp",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@Write_Command_2_Display",
+    "ID": "c:@F@freeMemory",
     "What": "Function",
     "defdec": "Def",
-    "display": "void Write_Command_2_Display(unsigned char)",
+    "display": "void freeMemory(struct LinkedList **)",
     "location": {
       "column": "6",
-      "line": "70",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+      "line": "36",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
     },
-    "name": "Write_Command_2_Display",
+    "name": "freeMemory",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@Write_Data_2_Display",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void Write_Data_2_Display(unsigned char)",
-    "location": {
-      "column": "6",
-      "line": "123",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
-    },
-    "name": "Write_Data_2_Display",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@dispGraphics",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void dispGraphics(void)",
-    "location": {
-      "column": "6",
-      "line": "169",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
-    },
-    "name": "dispGraphics",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@initDisplay",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void initDisplay(void)",
-    "location": {
-      "column": "6",
-      "line": "195",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
-    },
-    "name": "initDisplay",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@clearDisplay",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void clearDisplay(void)",
-    "location": {
-      "column": "6",
-      "line": "243",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
-    },
-    "name": "clearDisplay",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:display.c@6683@F@clearDisplay@i",
+    "ID": "c:LinkedList.c@687@F@freeMemory@temp",
     "What": "Variable",
     "defdec": "Def",
-    "display": "i",
+    "display": "temp",
     "location": {
-      "column": "11",
-      "line": "249",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+      "column": "24",
+      "line": "38",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
     },
-    "name": "i",
+    "name": "temp",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@printString",
+    "ID": "c:LinkedList.c@687@F@freeMemory@prev",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "prev",
+    "location": {
+      "column": "39",
+      "line": "38",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
+    },
+    "name": "prev",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@isMember",
     "What": "Function",
     "defdec": "Def",
-    "display": "void printString(char *)",
+    "display": "int isMember(struct LinkedList **, struct LinkedList *)",
     "location": {
-      "column": "6",
-      "line": "254",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+      "column": "5",
+      "line": "49",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
     },
-    "name": "printString",
+    "name": "isMember",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:display.c@6776@F@printString@n",
+    "ID": "c:LinkedList.c@935@F@isMember@temp",
     "What": "Variable",
     "defdec": "Def",
-    "display": "n",
+    "display": "temp",
+    "location": {
+      "column": "24",
+      "line": "51",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
+    },
+    "name": "temp",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@removeNode",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void removeNode(struct LinkedList **, struct LinkedList *)",
+    "location": {
+      "column": "6",
+      "line": "76",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
+    },
+    "name": "removeNode",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:LinkedList.c@1701@F@removeNode@temp",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "temp",
+    "location": {
+      "column": "28",
+      "line": "80",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
+    },
+    "name": "temp",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:LinkedList.c@1701@F@removeNode@prev",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "prev",
+    "location": {
+      "column": "35",
+      "line": "80",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
+    },
+    "name": "prev",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@readSensor",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "struct LinkedList * readSensor(int)",
+    "location": {
+      "column": "19",
+      "line": "99",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
+    },
+    "name": "readSensor",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:LinkedList.c@2192@F@readSensor@node",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "node",
+    "location": {
+      "column": "24",
+      "line": "101",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
+    },
+    "name": "node",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@getAddress",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "struct LinkedList * getAddress(struct LinkedList *, int)",
+    "location": {
+      "column": "20",
+      "line": "114",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
+    },
+    "name": "getAddress",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:LinkedList.c@2612@F@getAddress@temp",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "temp",
+    "location": {
+      "column": "24",
+      "line": "116",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
+    },
+    "name": "temp",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@findMax",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "float findMax(struct LinkedList *)",
     "location": {
       "column": "7",
-      "line": "256",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+      "line": "129",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
     },
-    "name": "n",
+    "name": "findMax",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@printChar",
+    "ID": "c:LinkedList.c@2915@F@findMax@compare",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "compare",
+    "location": {
+      "column": "12",
+      "line": "132",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
+    },
+    "name": "compare",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@findMin",
     "What": "Function",
     "defdec": "Def",
-    "display": "void printChar(char)",
+    "display": "float findMin(struct LinkedList *)",
     "location": {
-      "column": "6",
-      "line": "262",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+      "column": "7",
+      "line": "144",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
     },
-    "name": "printChar",
+    "name": "findMin",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@printPosChar",
-    "What": "Function",
+    "ID": "c:LinkedList.c@3266@F@findMin@compare",
+    "What": "Variable",
     "defdec": "Def",
-    "display": "void printPosChar(char, char, char)",
+    "display": "compare",
     "location": {
-      "column": "6",
-      "line": "267",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
+      "column": "12",
+      "line": "147",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
     },
-    "name": "printPosChar",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@printPos",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void printPos(char *, char, char)",
-    "location": {
-      "column": "6",
-      "line": "274",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
-    },
-    "name": "printPos",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@printStartMenu",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void printStartMenu(void)",
-    "location": {
-      "column": "6",
-      "line": "281",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
-    },
-    "name": "printStartMenu",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@printTimeMenu",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void printTimeMenu(void)",
-    "location": {
-      "column": "6",
-      "line": "293",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
-    },
-    "name": "printTimeMenu",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@printDateMenu",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void printDateMenu(void)",
-    "location": {
-      "column": "6",
-      "line": "299",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
-    },
-    "name": "printDateMenu",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@printTempMenu",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void printTempMenu(void)",
-    "location": {
-      "column": "6",
-      "line": "305",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
-    },
-    "name": "printTempMenu",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@printBack",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void printBack(void)",
-    "location": {
-      "column": "6",
-      "line": "311",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
-    },
-    "name": "printBack",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@clearBack",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void clearBack(void)",
-    "location": {
-      "column": "6",
-      "line": "315",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
-    },
-    "name": "clearBack",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@printData",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void printData(void)",
-    "location": {
-      "column": "6",
-      "line": "319",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
-    },
-    "name": "printData",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@resetPointer",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void resetPointer(void)",
-    "location": {
-      "column": "6",
-      "line": "330",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
-    },
-    "name": "resetPointer",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@printKey",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void printKey(int)",
-    "location": {
-      "column": "6",
-      "line": "337",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\display.c"
-    },
-    "name": "printKey",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:pins.c@24@macro@pin2",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "pin2",
-    "location": {
-      "column": "9",
-      "line": "3",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
-    },
-    "name": "pin2",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:pins.c@62@macro@pin25",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "pin25",
-    "location": {
-      "column": "9",
-      "line": "6",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
-    },
-    "name": "pin25",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:pins.c@84@macro@pin27",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "pin27",
-    "location": {
-      "column": "9",
-      "line": "7",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
-    },
-    "name": "pin27",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:pins.c@106@macro@pin28",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "pin28",
-    "location": {
-      "column": "9",
-      "line": "8",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
-    },
-    "name": "pin28",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:pins.c@145@macro@pin34",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "pin34",
-    "location": {
-      "column": "9",
-      "line": "11",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
-    },
-    "name": "pin34",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:pins.c@167@macro@pin35",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "pin35",
-    "location": {
-      "column": "9",
-      "line": "12",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
-    },
-    "name": "pin35",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:pins.c@189@macro@pin36",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "pin36",
-    "location": {
-      "column": "9",
-      "line": "13",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
-    },
-    "name": "pin36",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:pins.c@211@macro@pin37",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "pin37",
-    "location": {
-      "column": "9",
-      "line": "14",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
-    },
-    "name": "pin37",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:pins.c@233@macro@pin39",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "pin39",
-    "location": {
-      "column": "9",
-      "line": "15",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
-    },
-    "name": "pin39",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:pins.c@255@macro@pin40",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "pin40",
-    "location": {
-      "column": "9",
-      "line": "16",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
-    },
-    "name": "pin40",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:pins.c@277@macro@pin41",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "pin41",
-    "location": {
-      "column": "9",
-      "line": "17",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
-    },
-    "name": "pin41",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:pins.c@299@macro@pin44",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "pin44",
-    "location": {
-      "column": "9",
-      "line": "18",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
-    },
-    "name": "pin44",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:pins.c@322@macro@pin45",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "pin45",
-    "location": {
-      "column": "9",
-      "line": "19",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
-    },
-    "name": "pin45",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:pins.c@345@macro@pin46",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "pin46",
-    "location": {
-      "column": "9",
-      "line": "20",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
-    },
-    "name": "pin46",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:pins.c@368@macro@pin47",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "pin47",
-    "location": {
-      "column": "9",
-      "line": "21",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
-    },
-    "name": "pin47",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:pins.c@391@macro@pin48",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "pin48",
-    "location": {
-      "column": "9",
-      "line": "22",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
-    },
-    "name": "pin48",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:pins.c@414@macro@pin49",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "pin49",
-    "location": {
-      "column": "9",
-      "line": "23",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
-    },
-    "name": "pin49",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:pins.c@437@macro@pin50",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "pin50",
-    "location": {
-      "column": "9",
-      "line": "24",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
-    },
-    "name": "pin50",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:pins.c@460@macro@pin51",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "pin51",
-    "location": {
-      "column": "9",
-      "line": "25",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
-    },
-    "name": "pin51",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:pins.c@505@macro@analog8",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "analog8",
-    "location": {
-      "column": "9",
-      "line": "30",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
-    },
-    "name": "analog8",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:pins.c@541@macro@analog5",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "analog5",
-    "location": {
-      "column": "9",
-      "line": "32",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
-    },
-    "name": "analog5",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:pins.c@565@macro@analog6",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "analog6",
-    "location": {
-      "column": "9",
-      "line": "33",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
-    },
-    "name": "analog6",
+    "name": "compare",
     "origin": "project_file",
     "scope": null
   },
@@ -117655,286 +117910,6 @@
     "scope": null
   },
   {
-    "ID": "c:@light2",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "light2",
-    "location": {
-      "column": "7",
-      "line": "5",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
-    },
-    "name": "light2",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@lightFlag",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "lightFlag",
-    "location": {
-      "column": "5",
-      "line": "6",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
-    },
-    "name": "lightFlag",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@light",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "light",
-    "location": {
-      "column": "7",
-      "line": "7",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
-    },
-    "name": "light",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@light1",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "light1",
-    "location": {
-      "column": "7",
-      "line": "8",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
-    },
-    "name": "light1",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@flag1",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "flag1",
-    "location": {
-      "column": "5",
-      "line": "9",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
-    },
-    "name": "flag1",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@flag2",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "flag2",
-    "location": {
-      "column": "5",
-      "line": "10",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
-    },
-    "name": "flag2",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@calcLight",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "float calcLight(void)",
-    "location": {
-      "column": "7",
-      "line": "12",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
-    },
-    "name": "calcLight",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@initLight",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void initLight(void)",
-    "location": {
-      "column": "6",
-      "line": "13",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
-    },
-    "name": "initLight",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@ADC_Handler",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void ADC_Handler(void)",
-    "location": {
-      "column": "6",
-      "line": "14",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
-    },
-    "name": "ADC_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@init",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void init(void)",
-    "location": {
-      "column": "6",
-      "line": "16",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
-    },
-    "name": "init",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@ADC_Handler",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void ADC_Handler(void)",
-    "location": {
-      "column": "6",
-      "line": "17",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
-    },
-    "name": "ADC_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@writeLight",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void writeLight(float)",
-    "location": {
-      "column": "6",
-      "line": "18",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
-    },
-    "name": "writeLight",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@initLight",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void initLight(void)",
-    "location": {
-      "column": "6",
-      "line": "22",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
-    },
-    "name": "initLight",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@calcLight",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "float calcLight(void)",
-    "location": {
-      "column": "7",
-      "line": "47",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
-    },
-    "name": "calcLight",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@ADC_Handler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void ADC_Handler(void)",
-    "location": {
-      "column": "6",
-      "line": "76",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
-    },
-    "name": "ADC_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@writeLight",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void writeLight(float)",
-    "location": {
-      "column": "6",
-      "line": "90",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
-    },
-    "name": "writeLight",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:lightSensor.c@2196@F@writeLight@singleDigit",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "singleDigit",
-    "location": {
-      "column": "9",
-      "line": "93",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
-    },
-    "name": "singleDigit",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:lightSensor.c@2265@F@writeLight@decimal",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "decimal",
-    "location": {
-      "column": "9",
-      "line": "94",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
-    },
-    "name": "decimal",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:lightSensor.c@2346@F@writeLight@decimal2",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "decimal2",
-    "location": {
-      "column": "9",
-      "line": "95",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
-    },
-    "name": "decimal2",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:lightSensor.c@2390@F@writeLight@decimal3",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "decimal3",
-    "location": {
-      "column": "9",
-      "line": "96",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\lightSensor.c"
-    },
-    "name": "decimal3",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
     "ID": "c:@F@initTemprature",
     "What": "Function",
     "defdec": "Dec",
@@ -117977,16 +117952,44 @@
     "scope": null
   },
   {
+    "ID": "c:@F@printTemprature",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void printTemprature(float, int, int)",
+    "location": {
+      "column": "6",
+      "line": "8",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\temprature.c"
+    },
+    "name": "printTemprature",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:@F@TCO_Handler",
     "What": "Function",
     "defdec": "Dec",
     "display": "void TCO_Handler(void)",
     "location": {
       "column": "6",
-      "line": "9",
+      "line": "10",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\temprature.c"
     },
     "name": "TCO_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SysTick_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void SysTick_Handler(void)",
+    "location": {
+      "column": "6",
+      "line": "11",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\temprature.c"
+    },
+    "name": "SysTick_Handler",
     "origin": "project_file",
     "scope": null
   },
@@ -117997,7 +118000,7 @@
     "display": "void write_temp(float)",
     "location": {
       "column": "6",
-      "line": "11",
+      "line": "12",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\temprature.c"
     },
     "name": "write_temp",
@@ -118011,7 +118014,7 @@
     "display": "float calcTemp(void)",
     "location": {
       "column": "7",
-      "line": "15",
+      "line": "16",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\temprature.c"
     },
     "name": "calcTemp",
@@ -118025,7 +118028,7 @@
     "display": "fallingCheck",
     "location": {
       "column": "14",
-      "line": "16",
+      "line": "17",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\temprature.c"
     },
     "name": "fallingCheck",
@@ -118039,7 +118042,7 @@
     "display": "void clearDisplay(void)",
     "location": {
       "column": "6",
-      "line": "17",
+      "line": "18",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\temprature.c"
     },
     "name": "clearDisplay",
@@ -118053,7 +118056,7 @@
     "display": "float writeTempWhenReady(void)",
     "location": {
       "column": "7",
-      "line": "19",
+      "line": "20",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\temprature.c"
     },
     "name": "writeTempWhenReady",
@@ -118067,7 +118070,7 @@
     "display": "void initTemprature(void)",
     "location": {
       "column": "6",
-      "line": "35",
+      "line": "36",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\temprature.c"
     },
     "name": "initTemprature",
@@ -118081,10 +118084,80 @@
     "display": "void resetTemprature(void)",
     "location": {
       "column": "6",
-      "line": "56",
+      "line": "57",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\temprature.c"
     },
     "name": "resetTemprature",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@printTemprature",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void printTemprature(float, int, int)",
+    "location": {
+      "column": "6",
+      "line": "66",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\temprature.c"
+    },
+    "name": "printTemprature",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:temprature.c@1474@F@printTemprature@tempArray",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "tempArray",
+    "location": {
+      "column": "8",
+      "line": "68",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\temprature.c"
+    },
+    "name": "tempArray",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:temprature.c@1516@F@printTemprature@tenthTemp",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "tenthTemp",
+    "location": {
+      "column": "7",
+      "line": "69",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\temprature.c"
+    },
+    "name": "tenthTemp",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:temprature.c@1549@F@printTemprature@singleTemp",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "singleTemp",
+    "location": {
+      "column": "7",
+      "line": "70",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\temprature.c"
+    },
+    "name": "singleTemp",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:temprature.c@1583@F@printTemprature@decimalTemp",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "decimalTemp",
+    "location": {
+      "column": "7",
+      "line": "71",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\temprature.c"
+    },
+    "name": "decimalTemp",
     "origin": "project_file",
     "scope": null
   },
@@ -118095,7 +118168,7 @@
     "display": "void tempMeasure(void)",
     "location": {
       "column": "6",
-      "line": "64",
+      "line": "81",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\temprature.c"
     },
     "name": "tempMeasure",
@@ -118109,7 +118182,7 @@
     "display": "void TC0_Handler(void)",
     "location": {
       "column": "6",
-      "line": "76",
+      "line": "93",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\temprature.c"
     },
     "name": "TC0_Handler",
@@ -118123,7 +118196,7 @@
     "display": "float calcTemp(void)",
     "location": {
       "column": "7",
-      "line": "83",
+      "line": "100",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\temprature.c"
     },
     "name": "calcTemp",
@@ -118131,13 +118204,13 @@
     "scope": null
   },
   {
-    "ID": "c:temprature.c@2026@F@calcTemp@ra",
+    "ID": "c:temprature.c@2444@F@calcTemp@ra",
     "What": "Variable",
     "defdec": "Def",
     "display": "ra",
     "location": {
       "column": "7",
-      "line": "85",
+      "line": "102",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\temprature.c"
     },
     "name": "ra",
@@ -118145,13 +118218,13 @@
     "scope": null
   },
   {
-    "ID": "c:temprature.c@2053@F@calcTemp@rb",
+    "ID": "c:temprature.c@2471@F@calcTemp@rb",
     "What": "Variable",
     "defdec": "Def",
     "display": "rb",
     "location": {
       "column": "7",
-      "line": "86",
+      "line": "103",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\temprature.c"
     },
     "name": "rb",
@@ -118159,13 +118232,13 @@
     "scope": null
   },
   {
-    "ID": "c:temprature.c@2084@F@calcTemp@time",
+    "ID": "c:temprature.c@2502@F@calcTemp@time",
     "What": "Variable",
     "defdec": "Def",
     "display": "time",
     "location": {
       "column": "9",
-      "line": "88",
+      "line": "105",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\temprature.c"
     },
     "name": "time",
@@ -118179,7 +118252,7 @@
     "display": "void write_temp(float)",
     "location": {
       "column": "6",
-      "line": "94",
+      "line": "111",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\temprature.c"
     },
     "name": "write_temp",
@@ -118187,13 +118260,13 @@
     "scope": null
   },
   {
-    "ID": "c:temprature.c@2295@F@write_temp@tenthDigit",
+    "ID": "c:temprature.c@2713@F@write_temp@tenthDigit",
     "What": "Variable",
     "defdec": "Def",
     "display": "tenthDigit",
     "location": {
       "column": "9",
-      "line": "96",
+      "line": "113",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\temprature.c"
     },
     "name": "tenthDigit",
@@ -118201,13 +118274,13 @@
     "scope": null
   },
   {
-    "ID": "c:temprature.c@2367@F@write_temp@singleDigit",
+    "ID": "c:temprature.c@2785@F@write_temp@singleDigit",
     "What": "Variable",
     "defdec": "Def",
     "display": "singleDigit",
     "location": {
       "column": "9",
-      "line": "97",
+      "line": "114",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\temprature.c"
     },
     "name": "singleDigit",
@@ -118215,16 +118288,632 @@
     "scope": null
   },
   {
-    "ID": "c:temprature.c@2439@F@write_temp@decimal",
+    "ID": "c:temprature.c@2857@F@write_temp@decimal",
     "What": "Variable",
     "defdec": "Def",
     "display": "decimal",
     "location": {
       "column": "9",
-      "line": "98",
+      "line": "115",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\temprature.c"
     },
     "name": "decimal",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@99@macro@_STDIO",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_STDIO",
+    "location": {
+      "column": "9",
+      "line": "4",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "_STDIO",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@375@macro@NULL",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NULL",
+    "location": {
+      "column": "11",
+      "line": "19",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "NULL",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@3283@macro@EOF",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "EOF",
+    "location": {
+      "column": "9",
+      "line": "103",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "EOF",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@3315@macro@SEEK_SET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SEEK_SET",
+    "location": {
+      "column": "9",
+      "line": "105",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "SEEK_SET",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@3342@macro@SEEK_CUR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SEEK_CUR",
+    "location": {
+      "column": "9",
+      "line": "106",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "SEEK_CUR",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@3369@macro@SEEK_END",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SEEK_END",
+    "location": {
+      "column": "9",
+      "line": "107",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "SEEK_END",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@T@fpos_t",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "_Fpost",
+    "location": {
+      "column": "16",
+      "line": "110",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "fpos_t",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@3737@macro@__PRINTFPR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__PRINTFPR",
+    "location": {
+      "column": "11",
+      "line": "126",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "__PRINTFPR",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@3934@macro@__SCANFPR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__SCANFPR",
+    "location": {
+      "column": "11",
+      "line": "129",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "__SCANFPR",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@4131@macro@__SCANFSPR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__SCANFSPR",
+    "location": {
+      "column": "11",
+      "line": "132",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "__SCANFSPR",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@4448@macro@__DEPREC_PRINTF",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__DEPREC_PRINTF",
+    "location": {
+      "column": "9",
+      "line": "141",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "__DEPREC_PRINTF",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdio.h@4493@macro@__DEPREC_SCANF",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__DEPREC_SCANF",
+    "location": {
+      "column": "9",
+      "line": "142",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "__DEPREC_SCANF",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@__gets",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "char * __gets(char *, int)",
+    "location": {
+      "column": "37",
+      "line": "197",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "__gets",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@gets",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "char * gets(char *)",
+    "location": {
+      "column": "37",
+      "line": "198",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "gets",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@perror",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void perror(const char *)",
+    "location": {
+      "column": "39",
+      "line": "200",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "perror",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@printf",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int printf(const char *restrict, ...)",
+    "location": {
+      "column": "39",
+      "line": "201",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "printf",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@puts",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int puts(const char *)",
+    "location": {
+      "column": "39",
+      "line": "202",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "puts",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@scanf",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int scanf(const char *restrict, ...)",
+    "location": {
+      "column": "39",
+      "line": "203",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "scanf",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@sprintf",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int sprintf(char *restrict, const char *restrict, ...)",
+    "location": {
+      "column": "39",
+      "line": "204",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "sprintf",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@sscanf",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int sscanf(const char *restrict, const char *restrict, ...)",
+    "location": {
+      "column": "39",
+      "line": "206",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "sscanf",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@__ungetchar",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int __ungetchar(int)",
+    "location": {
+      "column": "39",
+      "line": "209",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "__ungetchar",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@vprintf",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int vprintf(const char *restrict, __Va_list)",
+    "location": {
+      "column": "39",
+      "line": "210",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "vprintf",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@vscanf",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int vscanf(const char *restrict, __Va_list)",
+    "location": {
+      "column": "37",
+      "line": "213",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "vscanf",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@vsscanf",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int vsscanf(const char *restrict, const char *restrict, __Va_list)",
+    "location": {
+      "column": "37",
+      "line": "214",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "vsscanf",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@vsprintf",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int vsprintf(char *restrict, const char *restrict, __Va_list)",
+    "location": {
+      "column": "37",
+      "line": "217",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "vsprintf",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@__write_array",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "size_t __write_array(const void *, size_t, size_t)",
+    "location": {
+      "column": "35",
+      "line": "220",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "__write_array",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@snprintf",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int snprintf(char *restrict, size_t, const char *restrict, ...)",
+    "location": {
+      "column": "38",
+      "line": "222",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "snprintf",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@vsnprintf",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int vsnprintf(char *restrict, size_t, const char *restrict, __Va_list)",
+    "location": {
+      "column": "38",
+      "line": "224",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "vsnprintf",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@getchar",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int getchar(void)",
+    "location": {
+      "column": "35",
+      "line": "229",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "getchar",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@putchar",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int putchar(int)",
+    "location": {
+      "column": "35",
+      "line": "230",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "putchar",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@remove",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int remove(const char *)",
+    "location": {
+      "column": "35",
+      "line": "233",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "remove",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@rename",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int rename(const char *, const char *)",
+    "location": {
+      "column": "35",
+      "line": "234",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
+    },
+    "name": "rename",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@waitForBack",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void waitForBack(void)",
+    "location": {
+      "column": "6",
+      "line": "3",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\program.c"
+    },
+    "name": "waitForBack",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@startDate",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void startDate(void)",
+    "location": {
+      "column": "6",
+      "line": "4",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\program.c"
+    },
+    "name": "startDate",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@startMeasure",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void startMeasure(void)",
+    "location": {
+      "column": "6",
+      "line": "5",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\program.c"
+    },
+    "name": "startMeasure",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@measureFunc",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void measureFunc(void)",
+    "location": {
+      "column": "6",
+      "line": "6",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\program.c"
+    },
+    "name": "measureFunc",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@startData",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void startData(void)",
+    "location": {
+      "column": "6",
+      "line": "7",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\program.c"
+    },
+    "name": "startData",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@startDate",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void startDate(void)",
+    "location": {
+      "column": "6",
+      "line": "9",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\program.c"
+    },
+    "name": "startDate",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@startTime",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void startTime(void)",
+    "location": {
+      "column": "6",
+      "line": "29",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\program.c"
+    },
+    "name": "startTime",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@startMeasure",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void startMeasure(void)",
+    "location": {
+      "column": "6",
+      "line": "48",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\program.c"
+    },
+    "name": "startMeasure",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@measureFunc",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void measureFunc(void)",
+    "location": {
+      "column": "6",
+      "line": "64",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\program.c"
+    },
+    "name": "measureFunc",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@startData",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void startData(void)",
+    "location": {
+      "column": "6",
+      "line": "76",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\program.c"
+    },
+    "name": "startData",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:program.c@1869@F@startData@avg",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "avg",
+    "location": {
+      "column": "13",
+      "line": "89",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\program.c"
+    },
+    "name": "avg",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@waitForBack",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void waitForBack(void)",
+    "location": {
+      "column": "6",
+      "line": "107",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\program.c"
+    },
+    "name": "waitForBack",
     "origin": "project_file",
     "scope": null
   },
@@ -118333,7 +119022,7 @@
     "display": "int readTime(char *)",
     "location": {
       "column": "5",
-      "line": "13",
+      "line": "14",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\time.c"
     },
     "name": "readTime",
@@ -118341,13 +119030,13 @@
     "scope": null
   },
   {
-    "ID": "c:time.c@303@F@readTime@hour",
+    "ID": "c:time.c@305@F@readTime@hour",
     "What": "Variable",
     "defdec": "Def",
     "display": "hour",
     "location": {
       "column": "7",
-      "line": "14",
+      "line": "15",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\time.c"
     },
     "name": "hour",
@@ -118355,13 +119044,13 @@
     "scope": null
   },
   {
-    "ID": "c:time.c@354@F@readTime@minute",
+    "ID": "c:time.c@356@F@readTime@minute",
     "What": "Variable",
     "defdec": "Def",
     "display": "minute",
     "location": {
       "column": "7",
-      "line": "15",
+      "line": "16",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\time.c"
     },
     "name": "minute",
@@ -118369,13 +119058,13 @@
     "scope": null
   },
   {
-    "ID": "c:time.c@407@F@readTime@second",
+    "ID": "c:time.c@409@F@readTime@second",
     "What": "Variable",
     "defdec": "Def",
     "display": "second",
     "location": {
       "column": "7",
-      "line": "16",
+      "line": "17",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\time.c"
     },
     "name": "second",
@@ -118383,13 +119072,13 @@
     "scope": null
   },
   {
-    "ID": "c:time.c@462@F@readTime@validate",
+    "ID": "c:time.c@464@F@readTime@validate",
     "What": "Variable",
     "defdec": "Def",
     "display": "validate",
     "location": {
       "column": "7",
-      "line": "18",
+      "line": "19",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\time.c"
     },
     "name": "validate",
@@ -118403,7 +119092,7 @@
     "display": "int calcTime(int, int, int)",
     "location": {
       "column": "5",
-      "line": "26",
+      "line": "27",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\time.c"
     },
     "name": "calcTime",
@@ -118417,7 +119106,7 @@
     "display": "int validateTime(int, int, int)",
     "location": {
       "column": "5",
-      "line": "29",
+      "line": "30",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\time.c"
     },
     "name": "validateTime",
@@ -118428,10 +119117,10 @@
     "ID": "c:@F@printTime",
     "What": "Function",
     "defdec": "Def",
-    "display": "void printTime(int)",
+    "display": "void printTime(int, int, int)",
     "location": {
       "column": "6",
-      "line": "36",
+      "line": "37",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\time.c"
     },
     "name": "printTime",
@@ -118439,13 +119128,13 @@
     "scope": null
   },
   {
-    "ID": "c:time.c@939@F@printTime@hour",
+    "ID": "c:time.c@955@F@printTime@hour",
     "What": "Variable",
     "defdec": "Def",
     "display": "hour",
     "location": {
       "column": "7",
-      "line": "38",
+      "line": "39",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\time.c"
     },
     "name": "hour",
@@ -118453,13 +119142,13 @@
     "scope": null
   },
   {
-    "ID": "c:time.c@1055@F@printTime@minute",
+    "ID": "c:time.c@1139@F@printTime@minute",
     "What": "Variable",
     "defdec": "Def",
     "display": "minute",
     "location": {
       "column": "7",
-      "line": "45",
+      "line": "50",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\time.c"
     },
     "name": "minute",
@@ -118467,13 +119156,13 @@
     "scope": null
   },
   {
-    "ID": "c:time.c@1088@F@printTime@dispSec",
+    "ID": "c:time.c@1172@F@printTime@dispSec",
     "What": "Variable",
     "defdec": "Def",
     "display": "dispSec",
     "location": {
       "column": "7",
-      "line": "47",
+      "line": "52",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\time.c"
     },
     "name": "dispSec",
@@ -118481,13 +119170,13 @@
     "scope": null
   },
   {
-    "ID": "c:time.c@1119@F@printTime@tenthHour",
+    "ID": "c:time.c@1203@F@printTime@tenthHour",
     "What": "Variable",
     "defdec": "Def",
     "display": "tenthHour",
     "location": {
       "column": "7",
-      "line": "49",
+      "line": "54",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\time.c"
     },
     "name": "tenthHour",
@@ -118495,13 +119184,13 @@
     "scope": null
   },
   {
-    "ID": "c:time.c@1148@F@printTime@singleHour",
+    "ID": "c:time.c@1232@F@printTime@singleHour",
     "What": "Variable",
     "defdec": "Def",
     "display": "singleHour",
     "location": {
       "column": "7",
-      "line": "50",
+      "line": "55",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\time.c"
     },
     "name": "singleHour",
@@ -118509,13 +119198,13 @@
     "scope": null
   },
   {
-    "ID": "c:time.c@1181@F@printTime@tenthMinute",
+    "ID": "c:time.c@1265@F@printTime@tenthMinute",
     "What": "Variable",
     "defdec": "Def",
     "display": "tenthMinute",
     "location": {
       "column": "7",
-      "line": "52",
+      "line": "57",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\time.c"
     },
     "name": "tenthMinute",
@@ -118523,13 +119212,13 @@
     "scope": null
   },
   {
-    "ID": "c:time.c@1214@F@printTime@singleMinute",
+    "ID": "c:time.c@1298@F@printTime@singleMinute",
     "What": "Variable",
     "defdec": "Def",
     "display": "singleMinute",
     "location": {
       "column": "7",
-      "line": "53",
+      "line": "58",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\time.c"
     },
     "name": "singleMinute",
@@ -118537,13 +119226,13 @@
     "scope": null
   },
   {
-    "ID": "c:time.c@1251@F@printTime@tenthSecond",
+    "ID": "c:time.c@1335@F@printTime@tenthSecond",
     "What": "Variable",
     "defdec": "Def",
     "display": "tenthSecond",
     "location": {
       "column": "7",
-      "line": "55",
+      "line": "60",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\time.c"
     },
     "name": "tenthSecond",
@@ -118551,13 +119240,13 @@
     "scope": null
   },
   {
-    "ID": "c:time.c@1285@F@printTime@singleSecond",
+    "ID": "c:time.c@1369@F@printTime@singleSecond",
     "What": "Variable",
     "defdec": "Def",
     "display": "singleSecond",
     "location": {
       "column": "7",
-      "line": "56",
+      "line": "61",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\time.c"
     },
     "name": "singleSecond",
@@ -118565,13 +119254,13 @@
     "scope": null
   },
   {
-    "ID": "c:time.c@1323@F@printTime@time",
+    "ID": "c:time.c@1407@F@printTime@time",
     "What": "Variable",
     "defdec": "Def",
     "display": "time",
     "location": {
       "column": "8",
-      "line": "58",
+      "line": "63",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\time.c"
     },
     "name": "time",
@@ -118585,7 +119274,7 @@
     "display": "void waitForTime(void)",
     "location": {
       "column": "6",
-      "line": "62",
+      "line": "67",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\time.c"
     },
     "name": "waitForTime",
@@ -118593,944 +119282,17 @@
     "scope": null
   },
   {
-    "ID": "c:time.c@1628@F@waitForTime@i",
+    "ID": "c:time.c@1710@F@waitForTime@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "9",
-      "line": "68",
+      "line": "73",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\time.c"
     },
     "name": "i",
     "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@freeMemory",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void freeMemory(struct LinkedList **)",
-    "location": {
-      "column": "6",
-      "line": "9",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
-    },
-    "name": "freeMemory",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@isMember",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int isMember(struct LinkedList **, struct LinkedList *)",
-    "location": {
-      "column": "5",
-      "line": "10",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
-    },
-    "name": "isMember",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@findMax",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "struct LinkedList * findMax(struct LinkedList *)",
-    "location": {
-      "column": "20",
-      "line": "11",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
-    },
-    "name": "findMax",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@S@LinkedList",
-    "What": "Struct",
-    "defdec": "Def",
-    "display": "LinkedList",
-    "location": {
-      "column": "8",
-      "line": "12",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
-    },
-    "members": [
-      {
-        "ID": "c:@S@LinkedList@FI@id",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "id",
-        "location": {
-          "column": "9",
-          "line": "14",
-          "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
-        },
-        "name": "id",
-        "origin": "project_file",
-        "scope": "LinkedList"
-      },
-      {
-        "ID": "c:@S@LinkedList@FI@tempature",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "tempature",
-        "location": {
-          "column": "11",
-          "line": "15",
-          "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
-        },
-        "name": "tempature",
-        "origin": "project_file",
-        "scope": "LinkedList"
-      },
-      {
-        "ID": "c:@S@LinkedList@FI@next",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "next",
-        "location": {
-          "column": "23",
-          "line": "16",
-          "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
-        },
-        "name": "next",
-        "origin": "project_file",
-        "scope": "LinkedList"
-      }
-    ],
-    "name": "LinkedList",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@insertLast",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void insertLast(struct LinkedList **, struct LinkedList *)",
-    "location": {
-      "column": "6",
-      "line": "18",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
-    },
-    "name": "insertLast",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:LinkedList.c@510@F@insertLast@temp",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "temp",
-    "location": {
-      "column": "24",
-      "line": "24",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
-    },
-    "name": "temp",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@freeMemory",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void freeMemory(struct LinkedList **)",
-    "location": {
-      "column": "6",
-      "line": "33",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
-    },
-    "name": "freeMemory",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:LinkedList.c@724@F@freeMemory@temp",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "temp",
-    "location": {
-      "column": "24",
-      "line": "35",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
-    },
-    "name": "temp",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:LinkedList.c@724@F@freeMemory@prev",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "prev",
-    "location": {
-      "column": "39",
-      "line": "35",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
-    },
-    "name": "prev",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@isMember",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "int isMember(struct LinkedList **, struct LinkedList *)",
-    "location": {
-      "column": "5",
-      "line": "46",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
-    },
-    "name": "isMember",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:LinkedList.c@972@F@isMember@temp",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "temp",
-    "location": {
-      "column": "24",
-      "line": "48",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
-    },
-    "name": "temp",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@removeNode",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void removeNode(struct LinkedList **, struct LinkedList *)",
-    "location": {
-      "column": "6",
-      "line": "73",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
-    },
-    "name": "removeNode",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:LinkedList.c@1738@F@removeNode@temp",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "temp",
-    "location": {
-      "column": "28",
-      "line": "77",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
-    },
-    "name": "temp",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:LinkedList.c@1738@F@removeNode@prev",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "prev",
-    "location": {
-      "column": "35",
-      "line": "77",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
-    },
-    "name": "prev",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@readSensor",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "struct LinkedList * readSensor(int)",
-    "location": {
-      "column": "19",
-      "line": "96",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
-    },
-    "name": "readSensor",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:LinkedList.c@2229@F@readSensor@node",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "node",
-    "location": {
-      "column": "24",
-      "line": "98",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
-    },
-    "name": "node",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@getAddress",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "struct LinkedList * getAddress(struct LinkedList *, int)",
-    "location": {
-      "column": "20",
-      "line": "111",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
-    },
-    "name": "getAddress",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:LinkedList.c@2659@F@getAddress@temp",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "temp",
-    "location": {
-      "column": "24",
-      "line": "113",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
-    },
-    "name": "temp",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@findMax",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "struct LinkedList * findMax(struct LinkedList *)",
-    "location": {
-      "column": "20",
-      "line": "126",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
-    },
-    "name": "findMax",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:LinkedList.c@2944@F@findMax@max",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "max",
-    "location": {
-      "column": "24",
-      "line": "128",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
-    },
-    "name": "max",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:LinkedList.c@2973@F@findMax@compare",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "compare",
-    "location": {
-      "column": "12",
-      "line": "129",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\LinkedList.c"
-    },
-    "name": "compare",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@111@macro@_YSIZET_H",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_YSIZET_H",
-    "location": {
-      "column": "9",
-      "line": "5",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "_YSIZET_H",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@277@macro@_SIZE_T",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_SIZE_T",
-    "location": {
-      "column": "11",
-      "line": "16",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "_SIZE_T",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@296@macro@_STD_USING_SIZE_T",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_STD_USING_SIZE_T",
-    "location": {
-      "column": "11",
-      "line": "17",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "_STD_USING_SIZE_T",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@T@size_t",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "_Sizet",
-    "location": {
-      "column": "18",
-      "line": "18",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "size_t",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@359@macro@__DATA_PTR_MEM_HELPER1__",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__DATA_PTR_MEM_HELPER1__",
-    "location": {
-      "column": "9",
-      "line": "21",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "__DATA_PTR_MEM_HELPER1__",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@T@__data_size_t",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "unsigned int",
-    "location": {
-      "column": "1",
-      "line": "23",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "__data_size_t",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@status",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "status",
-    "location": {
-      "column": "14",
-      "line": "5",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\servo.c"
-    },
-    "name": "status",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@generalConfig",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void generalConfig(void)",
-    "location": {
-      "column": "6",
-      "line": "6",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\servo.c"
-    },
-    "name": "generalConfig",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@initServo",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void initServo(void)",
-    "location": {
-      "column": "6",
-      "line": "7",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\servo.c"
-    },
-    "name": "initServo",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@servoVal",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int servoVal(void)",
-    "location": {
-      "column": "5",
-      "line": "8",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\servo.c"
-    },
-    "name": "servoVal",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@rotateServo",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void rotateServo(int)",
-    "location": {
-      "column": "6",
-      "line": "9",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\servo.c"
-    },
-    "name": "rotateServo",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@returnValue",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "returnValue",
-    "location": {
-      "column": "5",
-      "line": "11",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\servo.c"
-    },
-    "name": "returnValue",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@initServo",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void initServo(void)",
-    "location": {
-      "column": "6",
-      "line": "13",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\servo.c"
-    },
-    "name": "initServo",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@servoVal",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "int servoVal(void)",
-    "location": {
-      "column": "5",
-      "line": "27",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\servo.c"
-    },
-    "name": "servoVal",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@rotateServo",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void rotateServo(int)",
-    "location": {
-      "column": "6",
-      "line": "31",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\servo.c"
-    },
-    "name": "rotateServo",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@waitForBack",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void waitForBack(void)",
-    "location": {
-      "column": "6",
-      "line": "3",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\program.c"
-    },
-    "name": "waitForBack",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@startDate",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void startDate(void)",
-    "location": {
-      "column": "6",
-      "line": "4",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\program.c"
-    },
-    "name": "startDate",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@startMeasure",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void startMeasure(void)",
-    "location": {
-      "column": "6",
-      "line": "5",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\program.c"
-    },
-    "name": "startMeasure",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@startDate",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void startDate(void)",
-    "location": {
-      "column": "6",
-      "line": "6",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\program.c"
-    },
-    "name": "startDate",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@startTime",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void startTime(void)",
-    "location": {
-      "column": "6",
-      "line": "26",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\program.c"
-    },
-    "name": "startTime",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@startMeasure",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void startMeasure(void)",
-    "location": {
-      "column": "6",
-      "line": "45",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\program.c"
-    },
-    "name": "startMeasure",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@waitForBack",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void waitForBack(void)",
-    "location": {
-      "column": "6",
-      "line": "61",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\program.c"
-    },
-    "name": "waitForBack",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@S@LinkedList",
-    "What": "Struct",
-    "defdec": "Dec",
-    "display": "LinkedList",
-    "location": {
-      "column": "8",
-      "line": "4",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
-    },
-    "members": [],
-    "name": "LinkedList",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@readSensor",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "struct LinkedList * readSensor(int)",
-    "location": {
-      "column": "19",
-      "line": "4",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
-    },
-    "name": "readSensor",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@insertLast",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void insertLast(struct LinkedList **, struct LinkedList *)",
-    "location": {
-      "column": "6",
-      "line": "5",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
-    },
-    "name": "insertLast",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@printDate",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void printDate(void)",
-    "location": {
-      "column": "6",
-      "line": "6",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
-    },
-    "name": "printDate",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@keyStatus",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "keyStatus",
-    "location": {
-      "column": "5",
-      "line": "7",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
-    },
-    "name": "keyStatus",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@flagTime",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "flagTime",
-    "location": {
-      "column": "5",
-      "line": "8",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
-    },
-    "name": "flagTime",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@timeStatus",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "timeStatus",
-    "location": {
-      "column": "5",
-      "line": "9",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
-    },
-    "name": "timeStatus",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@checkTemp",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "checkTemp",
-    "location": {
-      "column": "7",
-      "line": "10",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
-    },
-    "name": "checkTemp",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@flag",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "flag",
-    "location": {
-      "column": "5",
-      "line": "11",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
-    },
-    "name": "flag",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@dateFlag",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "dateFlag",
-    "location": {
-      "column": "5",
-      "line": "12",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
-    },
-    "name": "dateFlag",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@readyDate",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "readyDate",
-    "location": {
-      "column": "5",
-      "line": "13",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
-    },
-    "name": "readyDate",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@measureFlag",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "measureFlag",
-    "location": {
-      "column": "5",
-      "line": "14",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
-    },
-    "name": "measureFlag",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@listTemprature",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "listTemprature",
-    "location": {
-      "column": "21",
-      "line": "15",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
-    },
-    "name": "listTemprature",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@tempStatus",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "tempStatus",
-    "location": {
-      "column": "14",
-      "line": "16",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
-    },
-    "name": "tempStatus",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@resetDel",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "resetDel",
-    "location": {
-      "column": "30",
-      "line": "16",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
-    },
-    "name": "resetDel",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@tFlag1",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "tFlag1",
-    "location": {
-      "column": "42",
-      "line": "16",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
-    },
-    "name": "tFlag1",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@tFlag2",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "tFlag2",
-    "location": {
-      "column": "53",
-      "line": "16",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
-    },
-    "name": "tFlag2",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@delay",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void delay(int)",
-    "location": {
-      "column": "6",
-      "line": "18",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
-    },
-    "name": "delay",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:head.h@477@F@delay@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "9",
-      "line": "20",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
-    },
-    "name": "i",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SysTick_Handler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void SysTick_Handler(void)",
-    "location": {
-      "column": "6",
-      "line": "36",
-      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\head.h"
-    },
-    "name": "SysTick_Handler",
-    "origin": "user_include",
     "scope": null
   },
   {
@@ -119688,6 +119450,440 @@
     "scope": null
   },
   {
+    "ID": "c:pins.c@24@macro@pin2",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "pin2",
+    "location": {
+      "column": "9",
+      "line": "3",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
+    },
+    "name": "pin2",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:pins.c@62@macro@pin25",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "pin25",
+    "location": {
+      "column": "9",
+      "line": "6",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
+    },
+    "name": "pin25",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:pins.c@84@macro@pin27",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "pin27",
+    "location": {
+      "column": "9",
+      "line": "7",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
+    },
+    "name": "pin27",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:pins.c@106@macro@pin28",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "pin28",
+    "location": {
+      "column": "9",
+      "line": "8",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
+    },
+    "name": "pin28",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:pins.c@145@macro@pin34",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "pin34",
+    "location": {
+      "column": "9",
+      "line": "11",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
+    },
+    "name": "pin34",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:pins.c@167@macro@pin35",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "pin35",
+    "location": {
+      "column": "9",
+      "line": "12",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
+    },
+    "name": "pin35",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:pins.c@189@macro@pin36",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "pin36",
+    "location": {
+      "column": "9",
+      "line": "13",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
+    },
+    "name": "pin36",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:pins.c@211@macro@pin37",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "pin37",
+    "location": {
+      "column": "9",
+      "line": "14",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
+    },
+    "name": "pin37",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:pins.c@233@macro@pin39",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "pin39",
+    "location": {
+      "column": "9",
+      "line": "15",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
+    },
+    "name": "pin39",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:pins.c@255@macro@pin40",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "pin40",
+    "location": {
+      "column": "9",
+      "line": "16",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
+    },
+    "name": "pin40",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:pins.c@277@macro@pin41",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "pin41",
+    "location": {
+      "column": "9",
+      "line": "17",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
+    },
+    "name": "pin41",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:pins.c@299@macro@pin44",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "pin44",
+    "location": {
+      "column": "9",
+      "line": "18",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
+    },
+    "name": "pin44",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:pins.c@322@macro@pin45",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "pin45",
+    "location": {
+      "column": "9",
+      "line": "19",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
+    },
+    "name": "pin45",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:pins.c@345@macro@pin46",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "pin46",
+    "location": {
+      "column": "9",
+      "line": "20",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
+    },
+    "name": "pin46",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:pins.c@368@macro@pin47",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "pin47",
+    "location": {
+      "column": "9",
+      "line": "21",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
+    },
+    "name": "pin47",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:pins.c@391@macro@pin48",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "pin48",
+    "location": {
+      "column": "9",
+      "line": "22",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
+    },
+    "name": "pin48",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:pins.c@414@macro@pin49",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "pin49",
+    "location": {
+      "column": "9",
+      "line": "23",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
+    },
+    "name": "pin49",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:pins.c@437@macro@pin50",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "pin50",
+    "location": {
+      "column": "9",
+      "line": "24",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
+    },
+    "name": "pin50",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:pins.c@460@macro@pin51",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "pin51",
+    "location": {
+      "column": "9",
+      "line": "25",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
+    },
+    "name": "pin51",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:pins.c@505@macro@analog8",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "analog8",
+    "location": {
+      "column": "9",
+      "line": "30",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
+    },
+    "name": "analog8",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:pins.c@541@macro@analog5",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "analog5",
+    "location": {
+      "column": "9",
+      "line": "32",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
+    },
+    "name": "analog5",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:pins.c@565@macro@analog6",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "analog6",
+    "location": {
+      "column": "9",
+      "line": "33",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\pins.c"
+    },
+    "name": "analog6",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@status",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "status",
+    "location": {
+      "column": "14",
+      "line": "5",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\servo.c"
+    },
+    "name": "status",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@generalConfig",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void generalConfig(void)",
+    "location": {
+      "column": "6",
+      "line": "6",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\servo.c"
+    },
+    "name": "generalConfig",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@initServo",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void initServo(void)",
+    "location": {
+      "column": "6",
+      "line": "7",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\servo.c"
+    },
+    "name": "initServo",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@servoVal",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int servoVal(void)",
+    "location": {
+      "column": "5",
+      "line": "8",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\servo.c"
+    },
+    "name": "servoVal",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@rotateServo",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void rotateServo(int)",
+    "location": {
+      "column": "6",
+      "line": "9",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\servo.c"
+    },
+    "name": "rotateServo",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@returnValue",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "returnValue",
+    "location": {
+      "column": "5",
+      "line": "11",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\servo.c"
+    },
+    "name": "returnValue",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@initServo",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void initServo(void)",
+    "location": {
+      "column": "6",
+      "line": "13",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\servo.c"
+    },
+    "name": "initServo",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@servoVal",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int servoVal(void)",
+    "location": {
+      "column": "5",
+      "line": "27",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\servo.c"
+    },
+    "name": "servoVal",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@rotateServo",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void rotateServo(int)",
+    "location": {
+      "column": "6",
+      "line": "31",
+      "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\servo.c"
+    },
+    "name": "rotateServo",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:@F@initEverything",
     "What": "Function",
     "defdec": "Dec",
@@ -119744,7 +119940,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@311@F@main@key",
+    "ID": "c:main.c@313@F@main@key",
     "What": "Variable",
     "defdec": "Def",
     "display": "key",
@@ -119764,7 +119960,7 @@
     "display": "void initEverything(void)",
     "location": {
       "column": "6",
-      "line": "42",
+      "line": "44",
       "path": "C:\\Users\\Axelsson\\Desktop\\ProjectGr19\\main.c"
     },
     "name": "initEverything",
@@ -119796,6 +119992,90 @@
       "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\time.h"
     },
     "name": "_DLIB_TIME_USES_64",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:ysizet.h@111@macro@_YSIZET_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_YSIZET_H",
+    "location": {
+      "column": "9",
+      "line": "5",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
+    },
+    "name": "_YSIZET_H",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:ysizet.h@277@macro@_SIZE_T",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_SIZE_T",
+    "location": {
+      "column": "11",
+      "line": "16",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
+    },
+    "name": "_SIZE_T",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:ysizet.h@296@macro@_STD_USING_SIZE_T",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_STD_USING_SIZE_T",
+    "location": {
+      "column": "11",
+      "line": "17",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
+    },
+    "name": "_STD_USING_SIZE_T",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:ysizet.h@T@size_t",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "_Sizet",
+    "location": {
+      "column": "18",
+      "line": "18",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
+    },
+    "name": "size_t",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:ysizet.h@359@macro@__DATA_PTR_MEM_HELPER1__",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__DATA_PTR_MEM_HELPER1__",
+    "location": {
+      "column": "9",
+      "line": "21",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
+    },
+    "name": "__DATA_PTR_MEM_HELPER1__",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:ysizet.h@T@__data_size_t",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned int",
+    "location": {
+      "column": "1",
+      "line": "23",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
+    },
+    "name": "__data_size_t",
     "origin": "system_include",
     "scope": null
   },

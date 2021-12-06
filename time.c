@@ -10,6 +10,7 @@ char timeSet [6];
 int sec;
 void printTime();
 
+
 int readTime(char str[]){
   int hour = (int)((str[0]-48)*10 + (str[1]-48));
   int minute = (int)((str[2]-48)*10 + (str[3]-48));
@@ -33,7 +34,7 @@ if(hour > 23 || hour < 0 || minute > 60 || minute < 0 || second > 60 || second <
 return 1;
 
 }
-void printTime(int sec)
+void printTime(int sec, int x, int y)
 {
   int hour = (sec /3600)%24;
   if(sec%86400 == 0)
@@ -41,7 +42,11 @@ void printTime(int sec)
     calcDate(year, month, day);
     hour = 0;
   }
-    
+  
+  if(sec%59 == 0 & measureFlag == 0)
+  {
+    measureFlag = 1;
+  }
   int minute = (sec / 60)%60;
 
   int dispSec = sec % 60;
@@ -56,7 +61,7 @@ void printTime(int sec)
   int singleSecond = dispSec%10;
   
   char time [] = {tenthHour+48,singleHour+48,':',tenthMinute+48,singleMinute+48,':',tenthSecond+48,singleSecond+48};
-  printPos(time, 216,1);
+  printPos(time, x,y);
   
 }
 void waitForTime(){

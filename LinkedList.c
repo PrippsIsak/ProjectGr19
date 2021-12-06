@@ -8,7 +8,10 @@
 
 void freeMemory(struct LinkedList**first);
 int isMember(struct LinkedList**first, struct LinkedList *el);
-struct LinkedList *findMax(struct LinkedList *first);
+
+
+
+
 struct LinkedList
 {
     int id;
@@ -27,7 +30,7 @@ void insertLast(struct LinkedList **first, struct LinkedList *el)
       temp=temp->next;
     temp->next=el;
   }
-
+   size++;
 }
 
 void freeMemory(struct LinkedList**first)//might be useful for higher grades
@@ -103,7 +106,7 @@ struct LinkedList*readSensor(int timeStamp)
         return NULL;
     }
     node -> id = sec;
-    node -> tempature = writeTempWhenReady(); //<- usuing our made function to find a random number
+    node -> tempature = temprature; //<- usuing our made function to find a random number
     node -> next = NULL;
     return node;
 }
@@ -123,17 +126,33 @@ struct LinkedList *getAddress(struct LinkedList *first,int id)
     return NULL;
 }
 
-struct LinkedList *findMax(struct LinkedList *first)
+float findMax(struct LinkedList *first)
 {
-    struct LinkedList *max;
+    //struct LinkedList *max;
     float  compare= 0;
     while(first != NULL)
     {
         if(first->tempature > compare){
             compare = first->tempature;
-            max = first;
+            maxStamp = first->id;
+           // max = first;
         }
         first = first -> next;
     }
-    return max;
+    return compare;
+}
+float findMin(struct LinkedList *first)
+{
+    //struct LinkedList *max;
+    float  compare= 1000; // hopefully its not gonna get this hot :)
+    while(first != NULL)
+    {
+        if(first->tempature < compare){
+            compare = first->tempature;
+            minStamp = first->id;
+           // max = first;
+        }
+        first = first -> next;
+    }
+    return compare;
 }
