@@ -66,8 +66,9 @@ int checkLeap(int year){
 
 void calcDate(int currentYear, int currentMonth, int currentDay)
 {
+  weekInsertLast(&WeekTemprature, saveDay(sec));
   dateFlag = 0;
-  if((currentDay == 31) & (month == 1 || month == 3 ||month == 5 ||month == 7 || month == 8 || month == 10 || month == 12))
+  if((currentDay == 31) && (month == 1 || month == 3 ||month == 5 ||month == 7 || month == 8 || month == 10 || month == 12))
   {
     day = 1;
     if(currentMonth == 12)
@@ -79,7 +80,7 @@ void calcDate(int currentYear, int currentMonth, int currentDay)
       month++;
   }
   
-  else if(currentDay == 28 & currentMonth == 2) // TODO: Flytta runt lite
+  else if(currentDay == 28 && currentMonth == 2) // TODO: Flytta runt lite
   {
     if(checkLeap(currentYear) == 1)
       day = 29;
@@ -90,7 +91,7 @@ void calcDate(int currentYear, int currentMonth, int currentDay)
     }
     
   }
-  else if(currentDay == 29 & currentMonth ==2)
+  else if(currentDay == 29 && currentMonth ==2)
   {
     day = 1;
     month = 3;

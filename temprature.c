@@ -5,7 +5,7 @@
 void initTemprature();
 void resetTemprature();
 void tempMeasure();
-void printTemprature(float temp, int x, int y);
+
 
 void TCO_Handler(void);
 void SysTick_Handler(void);

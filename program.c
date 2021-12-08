@@ -36,6 +36,7 @@ void startTime()
       if(readTime(timeSet)==1)//validate
       {
         printPos("Time successfully loaded!",180,0 );
+        flagTime = 1;
         break;
        }
       clearDisplay();
@@ -63,40 +64,40 @@ void startMeasure()
 }
 void measureFunc()
 {  
-   if(sec%60 == 0 && measureFlag == 1)
-    {
       writeTempWhenReady();
       insertLast(&listTemprature,readSensor(sec));
       totTemp += temprature;
       printDataFlag = 1;
       measureFlag = 0;
-      
-    }
 }
 void startData()
 {
+
   clearDisplay();
   printData();
   printBack();
   while(tmpKey != 10){
-    measureFunc();
-    if(printDataFlag == 1){
-      
-      printTemprature(findMax(listTemprature),79,0);
-      delay(100);
-      printTemprature(findMin(listTemprature),199,0);
-      
-      float avg = totTemp/(float)size;
-      delay(100);
-      printTemprature(avg,143,0);
-      delay(100);
-      printPos("Time stamp: ", 240, 0);
-      delay(100);
-      printTime(maxStamp, 252, 0);
-      delay(100);
-      printTime(minStamp,44,1);
-      delay(100);
-      printDataFlag = 0;
+    while(measureFlag == 0){}
+    {
+      measureFunc();
+      measureFlag = 0;
+    }
+    if(printDataFlag == 1)
+    {    
+        if(maxTempFlag)
+        {
+          printTemprature(maxTemp,76,0);
+          printTime(sec, 136, 0);
+          maxTempFlag = 0;
+        }
+        else if(minTempFlag)
+        {
+          printTemprature(minTemp,196,0);
+          printTime(sec,0,1);
+          minTempFlag = 0;
+        }
+        avg = totTemp / size;
+      printTemprature(avg,60,1);
     }
     tmpKey = keypad();
   }
@@ -107,6 +108,6 @@ void startData()
 }
 void waitForBack()
 {
-  while(!(keypad() == 10)){};
+  while(!(keypad() == 10)){keypad();};
   printStartMenu();
 }

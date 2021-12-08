@@ -7,8 +7,9 @@ int calcTime(int hour, int minute, int second);
 int validateTime(int hour, int minute, int second);
 void waitForTime();
 char timeSet [6];
-int sec;
-void printTime();
+
+
+int oldMinute;
 
 
 int readTime(char str[]){
@@ -18,10 +19,10 @@ int readTime(char str[]){
 
   int validate = validateTime(hour, minute, second);
   sec = calcTime(hour, minute, second);
-  if(validate == 1)
+  /*if(validate == 1)
     flagTime = 1;
   else
-    flagTime = 0;
+    flagTime = 0;*/
   return validate;
 }
 int calcTime(int hour, int minute, int second){
@@ -34,21 +35,24 @@ if(hour > 23 || hour < 0 || minute > 60 || minute < 0 || second > 60 || second <
 return 1;
 
 }
+int oldMinute = 0;
 void printTime(int sec, int x, int y)
 {
+  int minute = (sec / 60)%60;
   int hour = (sec /3600)%24;
-  if(sec%86400 == 0)
+  if(hour == 0 && dateFlag == 1)//wanna change date correctly
   {
     calcDate(year, month, day);
     hour = 0;
   }
+  if(hour == 23 && dateFlag == 0)
+    dateFlag = 1;
+  //wanna trigger measaureFlag when the minutes has switched
+  if(minute != oldMinute)
+      measureFlag = 1;
+  //delay(10000);
+  oldMinute = minute;
   
-  if(sec%59 == 0 & measureFlag == 0)
-  {
-    measureFlag = 1;
-  }
-  int minute = (sec / 60)%60;
-
   int dispSec = sec % 60;
   
   int tenthHour = hour/10; 

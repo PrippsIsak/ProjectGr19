@@ -6,10 +6,21 @@
 #include <time.h>
 
 
-void freeMemory(struct LinkedList**first);
+
 int isMember(struct LinkedList**first, struct LinkedList *el);
+void reset();
 
-
+struct WeekLinkedList
+{
+    int date;
+    float dayMax;
+    float dayMin;
+    float dayAvg;
+    int timeMin;
+    int timeMax;
+    struct WeekLinkedList*next;
+    
+};
 
 
 struct LinkedList
@@ -17,6 +28,7 @@ struct LinkedList
     int id;
     float tempature;
     struct LinkedList*next;
+    
 };
 void insertLast(struct LinkedList **first, struct LinkedList *el)
 {
@@ -96,6 +108,7 @@ void removeNode(struct LinkedList ** first, struct LinkedList *el)//do we need t
 }
 
 //uppgift 2 börjar
+
 struct LinkedList*readSensor(int timeStamp)
 {
     struct LinkedList *node;
@@ -108,6 +121,20 @@ struct LinkedList*readSensor(int timeStamp)
     node -> id = sec;
     node -> tempature = temprature; //<- usuing our made function to find a random number
     node -> next = NULL;
+    
+    if(temprature > maxTemp)
+        {
+          maxTemp = temprature;
+          maxStamp = sec;
+          maxTempFlag = 1;
+        }
+        else if(temprature < minTemp)
+        {
+          minTemp = temprature;
+          minStamp = sec;
+          minTempFlag = 1;
+        }
+    
     return node;
 }
 
@@ -134,7 +161,7 @@ float findMax(struct LinkedList *first)
     {
         if(first->tempature > compare){
             compare = first->tempature;
-            maxStamp = first->id;
+            //maxStamp = first->id;
            // max = first;
         }
         first = first -> next;
@@ -149,10 +176,49 @@ float findMin(struct LinkedList *first)
     {
         if(first->tempature < compare){
             compare = first->tempature;
-            minStamp = first->id;
+            //minStamp = first->id;
            // max = first;
         }
         first = first -> next;
     }
-    return compare;
+   return compare;
+}
+
+struct WeekLinkedList*saveDay(int date)
+{
+    struct WeekLinkedList *node;
+    node = (struct WeekLinkedList*) malloc(sizeof(struct WeekLinkedList));
+    if(node == NULL)
+    {
+        printf("Out of memory");
+        return NULL;
+    }
+    node -> date = date;
+    node -> dayAvg = avg;
+    node->dayMax = maxTemp;
+    node->dayMin = minTemp;
+    node->timeMin = minStamp;
+    node->timeMax = maxStamp;
+    node -> next = NULL;
+    reset();
+    return node;
+}
+void reset()
+{
+  maxTemp = 0;
+  minTemp = 1000;
+}
+void weekInsertLast(struct WeekLinkedList **first, struct WeekLinkedList *el)
+{
+  if(*first==NULL)//list is empty!
+    *first=el;
+  else
+  {
+    struct WeekLinkedList *temp;
+    temp=*first;
+    while(temp->next!=NULL)
+      temp=temp->next;
+    temp->next=el;
+  }     
+   weekSize++;
 }

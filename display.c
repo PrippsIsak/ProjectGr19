@@ -322,9 +322,19 @@ void printData()
 {
   clearDisplay();
   printPos("------ Temprature data ------",0,0);
-  printPos("Max temprature is: ",60,0);
-  printPos("Average temprature is: ",120,0);
-  printPos("Min temprature is: ",180,0);
+  printPos("Max temprature: ",60,0);
+  printPos("Max time stamp: ",120,0);
+  printPos("Min temprature: ",180,0);
+  printPos("Min time stamp: ",240,0);
+  printPos("Avg temprature: ",44,1);
+  printTemprature(maxTemp,76,0);
+  printTime(maxStamp, 136, 0);
+  printTemprature(minTemp,196,0);
+  printTime(minStamp,0,1);
+  printTemprature(avg,60,1);
+  printDataFlag = 0;
+  
+  
   //print avg
   //print min
   printBack();
