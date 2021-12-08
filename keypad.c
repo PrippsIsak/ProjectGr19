@@ -11,40 +11,8 @@ int tmpKey;
 int startRow = 5;
 void wait(int delay);
 void buttonUp();
-int whereTo;
 
-/*void waitForInputs(){
-  int range;
-  while(!(isPressed)){tmpKey = keypad();}
-   if(tmpKey == 1)
-   {
-    clearDisplay();
-    printDateMenu();
-    whereTo = 1;
-    range = 8;
-   }
-   if(tmpKey == 2)
-   {
-     clearDisplay();
-    printTimeMenu();
-    whereTo = 2;
-    range = 6;
-   }
-    int i = 0;
-    isPressed = 0;
-    wait(500);
-    while(i != range)
-    {
-        while(!(keyStatus%500 == 0 & isPressed == 1)){ tmpKey = keypad();}
-        inputs[i] = tmpKey+48;
-        printPosChar(inputs[i],120+i,0);
-        i++;
-        isPressed = 0;
-        keyStatus =1;
-    }
- wait(500);
- tmpKey = -1;
-}*/
+
 void initKeypad(){
   *AT91C_PIOD_PER = pin28;
   *AT91C_PIOD_PER = pin27;

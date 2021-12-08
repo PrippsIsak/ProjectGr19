@@ -5,7 +5,7 @@ void startDate();
 void startMeasure();
 void measureFunc();
 void startData();
-
+void weekPosition();
 void startDate()
 {
   if(readyDate == 0)
@@ -76,11 +76,10 @@ void startData()
   clearDisplay();
   printData();
   printBack();
-  while(tmpKey != 10){
-    while(measureFlag == 0){}
+  while(tmpKey != 10){//wait for a back command
+    if(measureFlag == 1)
     {
       measureFunc();
-      measureFlag = 0;
     }
     if(printDataFlag == 1)
     {    
@@ -95,10 +94,15 @@ void startData()
           printTemprature(minTemp,196,0);
           printTime(sec,0,1);
           minTempFlag = 0;
-        }
+        }        
         avg = totTemp / size;
       printTemprature(avg,60,1);
     }
+    if(tmpKey == 7 && weekSize > 0)
+    {
+          weekPosition();
+          tmpKey = 0;
+     }
     tmpKey = keypad();
   }
   tmpKey = 0;
@@ -106,6 +110,42 @@ void startData()
   printDate();
   printStartMenu();
 }
+void weekPosition()//calculate which screen we are on
+{
+  tmpKey = 0;
+  printOldData(WeekTemprature,posDay);
+  posDay = weekSize-1;
+  printPosChar(posDay+48,0,0);
+  
+  while(1)
+  {
+    tmpKey = keypad();
+    if(measureFlag == 1)
+    {
+      measureFunc();
+    }
+    if(weekSize == posDay)
+      break;
+    
+     else if(tmpKey == 9 )
+     {
+        posDay++;
+        printOldData(WeekTemprature, posDay);
+        printPosChar(posDay+48,0,0);
+        buttonUp();
+     }
+     else if(tmpKey == 7 && posDay != 0)
+     {
+       posDay--;
+       printOldData(WeekTemprature, posDay);
+       printPosChar(posDay+48,0,0);
+       buttonUp();
+     }
+     tmpKey = -1;
+  }
+  printData();
+}
+
 void waitForBack()
 {
   while(!(keypad() == 10)){keypad();};

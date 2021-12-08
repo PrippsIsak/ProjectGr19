@@ -24,7 +24,6 @@ void printTempMenu();
 void printData();
 
 
-
 unsigned char Read_Status_Display(void){
 
     unsigned char temp;
@@ -333,13 +332,36 @@ void printData()
   printTime(minStamp,0,1);
   printTemprature(avg,60,1);
   printDataFlag = 0;
-  
-  
-  //print avg
-  //print min
+ 
   printBack();
   printDate();
-  //waitBack();
+}
+void printOldData(struct WeekLinkedList *list,int pos)
+{
+  for(int i = 0; i<7;i++)
+  {
+    if(list->id == pos)
+    {
+      clearDisplay();
+      printPos("------ Temprature data ------",0,0);
+      printPos("M4x temprature: ",60,0);
+      printPos("Max time stamp: ",120,0);
+      printPos("Min temprature: ",180,0);
+      printPos("Min time stamp: ",240,0);
+      printPos("Avg temprature: ",44,1);
+      printTemprature(list->dayMax,76,0);
+      printTime(list->timeMax, 136, 0);
+      printTemprature(list->dayMin,196,0);
+      printTime(list->timeMin,0,1);
+      printTemprature(list -> dayAvg,60,1);
+      printDataFlag = 0;
+     
+      printBack();
+      printDate();
+      break;
+    }
+    list = list->next;
+  }
 }
 void resetPointer()
 {

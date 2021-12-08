@@ -5,14 +5,17 @@ struct LinkedList*readSensor(int timeStamp);
 struct WeekLinkedList*saveDay(int date);
 void insertLast(struct LinkedList **first, struct LinkedList *el);
 void weekInsertLast(struct WeekLinkedList **first, struct WeekLinkedList *el);
+struct WeekLinkedList *getAddress(struct WeekLinkedList *first,int id);
 float findMax(struct LinkedList *first);
 float findMin(struct LinkedList *first);
 void freeMemory(struct LinkedList**first);
 void printTemprature(float temp, int x, int y);
 void printTime();
 void printDate();
+int id = 0;
 int keyStatus;
 int printDataFlag = 0;
+int posDay = 0;
 int flagTime;//to enable the time
 int size = 0; //usuing for find avrage.
 int weekSize = 0;
@@ -43,6 +46,7 @@ void delay(int Value)
             asm("nop");
 }
 
+#include "LinkedList.c"
 #include "display.c"
 #include "keypad.c"
 
@@ -52,7 +56,7 @@ void delay(int Value)
 #include "date.c"
 #include "time.c"
 #include "program.c"
-#include "LinkedList.c"
+
 
 void SysTick_Handler(void){
   keyStatus++;

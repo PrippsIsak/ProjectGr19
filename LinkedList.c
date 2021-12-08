@@ -18,8 +18,8 @@ struct WeekLinkedList
     float dayAvg;
     int timeMin;
     int timeMax;
+    int id;
     struct WeekLinkedList*next;
-    
 };
 
 
@@ -138,9 +138,9 @@ struct LinkedList*readSensor(int timeStamp)
     return node;
 }
 
-struct LinkedList *getAddress(struct LinkedList *first,int id)
+struct WeekLinkedList *getAddress(struct WeekLinkedList *first,int id)
 {
-    struct LinkedList *temp;
+    struct WeekLinkedList *temp;
     while (first != NULL)
     {
         if(first->id == id)
@@ -193,6 +193,7 @@ struct WeekLinkedList*saveDay(int date)
         printf("Out of memory");
         return NULL;
     }
+    node-> id = id;
     node -> date = date;
     node -> dayAvg = avg;
     node->dayMax = maxTemp;
@@ -207,6 +208,8 @@ void reset()
 {
   maxTemp = 0;
   minTemp = 1000;
+  minStamp = 0;
+  maxStamp = 0;
 }
 void weekInsertLast(struct WeekLinkedList **first, struct WeekLinkedList *el)
 {

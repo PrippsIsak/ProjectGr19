@@ -67,6 +67,7 @@ int checkLeap(int year){
 void calcDate(int currentYear, int currentMonth, int currentDay)
 {
   weekInsertLast(&WeekTemprature, saveDay(sec));
+  id++;
   dateFlag = 0;
   if((currentDay == 31) && (month == 1 || month == 3 ||month == 5 ||month == 7 || month == 8 || month == 10 || month == 12))
   {
