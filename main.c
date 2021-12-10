@@ -23,7 +23,7 @@ int main()
          measureFunc();
        if(readyDate == 1)
        {
-         printDate();
+         printDate(year, month,day,204,1);
          readyDate = 0;
        }
        key = keypad();
@@ -33,10 +33,17 @@ int main()
          startTime();
        if(key == 3)
        { 
-         startMeasure();
+         startData();
        }
        if(key == 4)
-         startData();
+       {
+         if(speedrun == 1)
+           speedrun = 0;
+         else
+           speedrun = 1;
+         buttonUp();
+         
+       }
      }
   return 0;
 }

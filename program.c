@@ -6,17 +6,20 @@ void startMeasure();
 void measureFunc();
 void startData();
 void weekPosition();
+void clearNext();
+void clearPrev();
+
 void startDate()
 {
   if(readyDate == 0)
-    printDate();
+   printDate(year, month,day,204,1);
   while(1)
    { 
      waitForDate();//wait for user input
       if(readInput(dateSet)==1)//validate
         {
           printPos("Date successfully loaded!",180,0 );
-          printDate();
+          printDate(year, month,day,204,1);
           break;
         }
         clearDisplay();
@@ -29,7 +32,7 @@ void startDate()
 void startTime()
 {
   if(readyDate==0)
-    printDate();
+    printDate(year, month,day,204,1);
   while(1)
   {
    waitForTime();//wait for user inputs
@@ -67,6 +70,7 @@ void measureFunc()
       writeTempWhenReady();
       insertLast(&listTemprature,readSensor(sec));
       totTemp += temprature;
+      avg = totTemp / size;
       printDataFlag = 1;
       measureFlag = 0;
 }
@@ -81,45 +85,53 @@ void startData()
     {
       measureFunc();
     }
+    if(prevPrintFlag == 0 && weekSize ==1)
+    {
+      printPos("[7] prev day",104,1); 
+      prevPrintFlag = 0;
+    }
     if(printDataFlag == 1)
     {    
         if(maxTempFlag)
         {
           printTemprature(maxTemp,76,0);
-          printTime(sec, 136, 0);
+          printTime(maxStamp, 136, 0);
           maxTempFlag = 0;
         }
         else if(minTempFlag)
         {
           printTemprature(minTemp,196,0);
-          printTime(sec,0,1);
+          printTime(minStamp,0,1);
           minTempFlag = 0;
         }        
-        avg = totTemp / size;
       printTemprature(avg,60,1);
     }
     if(tmpKey == 7 && weekSize > 0)
     {
-          weekPosition();
-          tmpKey = 0;
+        weekPosition();
+        tmpKey = 0;
      }
     tmpKey = keypad();
   }
   tmpKey = 0;
   clearDisplay();
-  printDate();
+  printDate(year, month,day,204,1);
   printStartMenu();
 }
 void weekPosition()//calculate which screen we are on
 {
-  tmpKey = 0;
-  printOldData(WeekTemprature,posDay);
+  buttonUp();
   posDay = weekSize-1;
-  printPosChar(posDay+48,0,0);
-  
+   printPos("                                            ",10,0);
+  printOldData(WeekTemprature,posDay);
+  printPos("[9] next day",122,1);
+ 
+  if(weekSize == 1)
+    clearPrev(); 
   while(1)
   {
     tmpKey = keypad();
+    delay(150);
     if(measureFlag == 1)
     {
       measureFunc();
@@ -131,21 +143,34 @@ void weekPosition()//calculate which screen we are on
      {
         posDay++;
         printOldData(WeekTemprature, posDay);
-        printPosChar(posDay+48,0,0);
+        printPos("[7] prev day",104,1);
         buttonUp();
      }
      else if(tmpKey == 7 && posDay != 0)
      {
        posDay--;
+       if(posDay == 0)
+         clearPrev();
+       else 
+         printPos("[7] prev day",104,1);
+       
+       printPos("[9] next day",122,1);
        printOldData(WeekTemprature, posDay);
-       printPosChar(posDay+48,0,0);
        buttonUp();
      }
      tmpKey = -1;
   }
   printData();
+  printPos("[7] prev day",104,1);
 }
-
+void clearPrev()
+{
+  printPos("            ",104,1);
+}
+void clearNext()
+{
+  printPos("            ",122,1);
+}
 void waitForBack()
 {
   while(!(keypad() == 10)){keypad();};

@@ -62,7 +62,7 @@ void resetTemprature(){
 }
 void printTemprature(float temp, int x, int y)
 {
-  char tempArray [4] = {48, 48, 48, 48};
+  char tempArray [5] = {48, 48, 48, 48, 48};
   int tenthTemp = (int)temp/10;
   int singleTemp = (int)temp%10;
   int decimalTemp = (int)(temp*10)%10;
@@ -71,8 +71,10 @@ void printTemprature(float temp, int x, int y)
   tempArray[1] = singleTemp+48;
   tempArray[2] = ',';
   tempArray[3] = decimalTemp+48;
+  tempArray[4] = '\0';
   
   printPos(tempArray,x,y);
+  //tempArray [4]= {0,0,0,0};
   
 }
 void tempMeasure()

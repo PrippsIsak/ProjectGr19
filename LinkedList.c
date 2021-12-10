@@ -12,7 +12,9 @@ void reset();
 
 struct WeekLinkedList
 {
-    int date;
+    int day;
+    int month;
+    int year;
     float dayMax;
     float dayMin;
     float dayAvg;
@@ -184,7 +186,7 @@ float findMin(struct LinkedList *first)
    return compare;
 }
 
-struct WeekLinkedList*saveDay(int date)
+struct WeekLinkedList*saveDay()
 {
     struct WeekLinkedList *node;
     node = (struct WeekLinkedList*) malloc(sizeof(struct WeekLinkedList));
@@ -193,8 +195,10 @@ struct WeekLinkedList*saveDay(int date)
         printf("Out of memory");
         return NULL;
     }
-    node-> id = id;
-    node -> date = date;
+    node->id = id;
+    node-> day = day;
+    node -> month = month;
+    node->year = year;
     node -> dayAvg = avg;
     node->dayMax = maxTemp;
     node->dayMin = minTemp;
@@ -210,6 +214,7 @@ void reset()
   minTemp = 1000;
   minStamp = 0;
   maxStamp = 0;
+  avg = 0;
 }
 void weekInsertLast(struct WeekLinkedList **first, struct WeekLinkedList *el)
 {

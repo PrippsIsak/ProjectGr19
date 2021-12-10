@@ -191,7 +191,14 @@ void dispGraphics(void){
     Write_Command_2_Display(0x94); // Text on graphic off
 
 }
-
+void clearData()
+{
+  printPos("    ",76,0);
+  printPos("        ",136,0);
+  printPos("    ",196,0);
+  printPos("        ",0,1);
+  printPos("    ",60,1);
+}
 void initDisplay()
 {
     *AT91C_PMC_PCER = (1<<14); //Enable D
@@ -285,8 +292,8 @@ void printStartMenu()
   printPos("Press [1] to setup date ",60 ,0 );
   printPos("Press [2] to setup time ",120 ,0 );
   
-  printPos("Press [3] to Measure",180 ,0 );
-  printPos("Press [4] see measure data ",240 ,0 );
+  printPos("Press [3] see measure data",180 ,0 );
+  printPos("Press [4] toggle simulation",240 ,0 );
   printPos("Press [1] to setup Steffe ",44 ,1 );//try and error, do not know why. Ask Hazeem
   clearBack();
 }
@@ -320,21 +327,21 @@ void clearBack()
 void printData()
 {
   clearDisplay();
-  printPos("------ Temprature data ------",0,0);
   printPos("Max temprature: ",60,0);
   printPos("Max time stamp: ",120,0);
   printPos("Min temprature: ",180,0);
   printPos("Min time stamp: ",240,0);
   printPos("Avg temprature: ",44,1);
+  printPos("------ Temprature data ------",0,0);
   printTemprature(maxTemp,76,0);
   printTime(maxStamp, 136, 0);
   printTemprature(minTemp,196,0);
   printTime(minStamp,0,1);
   printTemprature(avg,60,1);
   printDataFlag = 0;
- 
+  printDate(year, month,day,204,1);
   printBack();
-  printDate();
+  
 }
 void printOldData(struct WeekLinkedList *list,int pos)
 {
@@ -342,13 +349,8 @@ void printOldData(struct WeekLinkedList *list,int pos)
   {
     if(list->id == pos)
     {
-      clearDisplay();
-      printPos("------ Temprature data ------",0,0);
-      printPos("M4x temprature: ",60,0);
-      printPos("Max time stamp: ",120,0);
-      printPos("Min temprature: ",180,0);
-      printPos("Min time stamp: ",240,0);
-      printPos("Avg temprature: ",44,1);
+      //printPos("                                                          ",0,0);
+      printDate(list->year, list->month, list->day,0,0); 
       printTemprature(list->dayMax,76,0);
       printTime(list->timeMax, 136, 0);
       printTemprature(list->dayMin,196,0);
@@ -357,7 +359,7 @@ void printOldData(struct WeekLinkedList *list,int pos)
       printDataFlag = 0;
      
       printBack();
-      printDate();
+      printDate(year, month,day,204,1);
       break;
     }
     list = list->next;

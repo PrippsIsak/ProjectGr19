@@ -2,7 +2,7 @@
 #include "system_sam3x.h"
 
 struct LinkedList*readSensor(int timeStamp);
-struct WeekLinkedList*saveDay(int date);
+struct WeekLinkedList*saveDay();
 void insertLast(struct LinkedList **first, struct LinkedList *el);
 void weekInsertLast(struct WeekLinkedList **first, struct WeekLinkedList *el);
 struct WeekLinkedList *getAddress(struct WeekLinkedList *first,int id);
@@ -10,9 +10,15 @@ float findMax(struct LinkedList *first);
 float findMin(struct LinkedList *first);
 void freeMemory(struct LinkedList**first);
 void printTemprature(float temp, int x, int y);
+void clearData();
 void printTime();
 void printDate();
+int day;
+int month;
+int year;
+int dateInt();
 int id = 0;
+int speedrun = 0;
 int keyStatus;
 int printDataFlag = 0;
 int posDay = 0;
@@ -35,6 +41,8 @@ int minStamp;//accsess the time when a new min is found
 int maxStamp;//accsess the time when a new max is found
 int minTempFlag = -1;//triggers when a new min is found to print
 int maxTempFlag = -1;//triggers when a new max is found to print
+int nextPrintFlag = 0;
+int prevPrintFlag = 0;
 struct LinkedList * listTemprature;
 struct WeekLinkedList * WeekTemprature;
 unsigned int tempStatus = 0, resetDel=0, tFlag1 =0, tFlag2 =1;  // FIXA 
@@ -76,7 +84,7 @@ void SysTick_Handler(void){
     
     if(timeStatus % 1000 == 0)
     {
-      sec+=1200;
+      sec+= 1 + (speedrun*1199);
       timeStatus = 0;
       printTime(sec,216,1);
     }

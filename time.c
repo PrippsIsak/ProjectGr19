@@ -72,7 +72,7 @@ void waitForTime(){
   while(!(isPressed)){tmpKey = keypad();}
      clearDisplay();
     if(readyDate == 0)
-      printDate();
+      printDate(year, month,day,204,1);
     printTimeMenu();
     int i = 0;
     wait(500);

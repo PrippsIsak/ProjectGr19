@@ -8,9 +8,7 @@ int checkLeap(int year);
 
 void waitForDate();
 char dateSet [8];
-int day;
-int month;
-int year;
+
 
 // usuing ascii '0' = 48 therefore we substract 48 from the char to get a number.
 //  if a user write # or * the valid date will take care of it.
@@ -66,7 +64,7 @@ int checkLeap(int year){
 
 void calcDate(int currentYear, int currentMonth, int currentDay)
 {
-  weekInsertLast(&WeekTemprature, saveDay(sec));
+  weekInsertLast(&WeekTemprature, saveDay());
   id++;
   dateFlag = 0;
   if((currentDay == 31) && (month == 1 || month == 3 ||month == 5 ||month == 7 || month == 8 || month == 10 || month == 12))
@@ -99,9 +97,10 @@ void calcDate(int currentYear, int currentMonth, int currentDay)
   }
   else 
     day++;
-  printDate();
+  printDate(year,month,day,204,1);
 }
-void printDate()
+
+void printDate(int year, int month, int day, int x, int y)
 {
   int thousandYear = year/1000;
   int hundredYear = (year/100)%10;
@@ -114,22 +113,22 @@ void printDate()
   int tenthDay = day/10;
   int dispDay = day%10;
     
+  char date [10] = {thousandYear+48,hundredYear+48,tenthYear+48,dispYear+48,'/',tenthMonth+48,dispMonth+48,'/',tenthDay+48,dispDay+48};
   
-  char date [] = {thousandYear+48,hundredYear+48,tenthYear+48,dispYear+48,'/',tenthMonth+48,dispMonth+48,'/',tenthDay+48,dispDay+48};
-  printPos(date, 204, 1);
+  printPos(date, x, y);
 }
+
 void waitForDate(){
   while(!(isPressed)){tmpKey = keypad();}  
   
     clearDisplay();
   
     if(readyDate == 0)// to allways print the date whereever we are if date has been set
-       printDate();
+       printDate(year, month,day,204,1);
     
     printDateMenu();
     int i = 0;
-    wait(500);
-    isPressed = 0;
+    buttonUp();
     while(i != 8)
     {
         buttonUp(); 
