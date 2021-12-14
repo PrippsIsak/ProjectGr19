@@ -19,12 +19,6 @@ int main()
     
     while(1)
      { 
-       //Testing code
-       
-       
-       
-       
-       // End testing code
        if(measureFlag == 1)
          measureFunc();
        if(readyDate == 1)

@@ -38,7 +38,7 @@
         <EnableCache>0</EnableCache>
     </ArmDriver>
     <DebugChecksum>
-        <Checksum>1487487440</Checksum>
+        <Checksum>502559713</Checksum>
     </DebugChecksum>
     <JLinkDriver>
         <LeaveTargetRunning>_ 0</LeaveTargetRunning>

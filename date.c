@@ -43,10 +43,11 @@ int validateDate(int year, int month, int day){
     else if(month == 2 && day == 29 )
     {
       return checkLeap(year);
-      if(day > 28)
-      {  
-        return 0;
-      }
+
+    }
+    if(day > 28)
+    {  
+      return 0;
     }
     return 1;
 }
