@@ -262,6 +262,32 @@ void setAlarm()
   printStartMenu();
   tmpKey = 0;
 }
+void greenhouse()
+{
+  light = calcLight();
+    if(hour > 4 && hour < 20)
+    {
+      if(light > 0.7)
+      {
+        setLed(1);
+        rotateServo(9);
+      }
+       else
+      {
+        rotateServo(18);
+        setLed(0);
+      }
+    }
+    else
+    {
+      // FLAG HERE 
+       rotateServo(18);
+       setLed(0);
+    }
+
+      
+}
+
 void clearPrev()
 {
   printPos("            ",104,1);

@@ -30,21 +30,23 @@ int validateDate(int year, int month, int day){
     if(month > 12 || month < 1 || day < 1 || year < 0)
       return 0;
     //check for 31 day months
-    if((month == 1 || month == 3 ||month == 5 ||month == 7 || month == 8 || month == 10 || month == 12)){
+   else if((month == 1 || month == 3 ||month == 5 ||month == 7 || month == 8 || month == 10 || month == 12)){
         if(day > 31)
           return 0;
     }
     //cehck for 30 day months
-    if((month == 4 || month == 6 || month == 9 || month == 11)){
-      if(day > 30)
-        return 0;
+    else if((month == 4 || month == 6 || month == 9 || month == 11)){
+        if(day > 30)
+          return 0;
     }
     //february :(
-    if(month == 2 && day == 29 )
+    else if(month == 2 && day == 29 )
+    {
       return checkLeap(year);
-    else{
       if(day > 28)
+      {  
         return 0;
+      }
     }
     return 1;
 }

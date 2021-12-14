@@ -13,9 +13,12 @@ void printTemprature(float temp, int x, int y);
 void clearData();
 void printTime();
 void printDate();
+void ledConfig();
+void setLed(int led);
 int day;
 int month;
 int year;
+int hour;
 int dateInt();
 int id = 0;
 int speedrun = 0;
@@ -50,6 +53,13 @@ struct LinkedList * listTemprature;
 struct WeekLinkedList * WeekTemprature;
 unsigned int tempStatus = 0, resetDel=0, tFlag1 =0, tFlag2 =1;  // FIXA 
 
+// Light
+float light = 0;
+float calcLight();
+
+// Servo
+void rotateServo(int deg);
+
 void delay(int Value)
 {
     int i;
@@ -67,6 +77,7 @@ void delay(int Value)
 #include "date.c"
 #include "time.c"
 #include "program.c"
+#include "led.c"
 
 
 void SysTick_Handler(void){
@@ -90,6 +101,7 @@ void SysTick_Handler(void){
       sec+= 1 + (speedrun*1199);
       timeStatus = 0;
       printTime(sec,216,1);
+      greenhouse();
     }
   }
 }

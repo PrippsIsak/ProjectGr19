@@ -19,6 +19,12 @@ int main()
     
     while(1)
      { 
+       //Testing code
+       
+       
+       
+       
+       // End testing code
        if(measureFlag == 1)
          measureFunc();
        if(readyDate == 1)
@@ -64,10 +70,13 @@ void initEverything(){
     keypad();
     
     // Servo
-//    initServo();
+    initServo();
     
     // Light
-//    initLight();
+    initLight();
+    
+    // Led
+    ledConfig();
     
     // Temprature
     SysTick_Config(SystemCoreClock*0.001); //Slow down the clock

@@ -4,12 +4,12 @@
 
 float light2 = 0;
 int lightFlag = 0;
-float light = 0;
+
 float light1 = 0;
 int flag1 = 0;
 int flag2 = 0;
 
-float calcLight();
+
 void initLight();
 void ADC_Handler();
 
@@ -67,7 +67,7 @@ float calcLight()
    //wanna remove the CHNB and just save the data
   //STEP SIZE = 2^n == 2^10 == 4095 
  
-  light = (light1+light2)/2; //converting analog signal to digital
+  light = (3.3*(light1+light2))/2; //converting analog signal to digital
   
   
   return light;    

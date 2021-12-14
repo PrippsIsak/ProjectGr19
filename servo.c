@@ -6,7 +6,7 @@ unsigned int status = 0;
 void generalConfig();
 void initServo();
 int servoVal();
-void rotateServo(int deg);
+
 
 int returnValue = 0;
 

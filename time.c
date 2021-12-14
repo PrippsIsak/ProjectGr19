@@ -39,7 +39,7 @@ int oldMinute = 0;
 void printTime(int sec, int x, int y)
 {
   int minute = (sec / 60)%60;
-  int hour = (sec /3600)%24;
+  hour = (sec /3600)%24;
   if(hour == 0 && dateFlag == 1)//wanna change date correctly
   {
     calcDate(year, month, day);
