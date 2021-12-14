@@ -44,6 +44,8 @@ int main()
          buttonUp();
          
        }
+       if(key == 5)
+         setAlarm();
      }
   return 0;
 }

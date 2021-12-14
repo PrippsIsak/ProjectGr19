@@ -43,6 +43,9 @@ int minTempFlag = -1;//triggers when a new min is found to print
 int maxTempFlag = -1;//triggers when a new max is found to print
 int nextPrintFlag = 0;
 int prevPrintFlag = 0;
+int maxAlarm = 10000;
+int minAlarm = -1;
+int alarmFlag = 0;
 struct LinkedList * listTemprature;
 struct WeekLinkedList * WeekTemprature;
 unsigned int tempStatus = 0, resetDel=0, tFlag1 =0, tFlag2 =1;  // FIXA 

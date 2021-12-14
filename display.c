@@ -294,7 +294,7 @@ void printStartMenu()
   
   printPos("Press [3] see measure data",180 ,0 );
   printPos("Press [4] toggle simulation",240 ,0 );
-  printPos("Press [1] to setup Steffe ",44 ,1 );//try and error, do not know why. Ask Hazeem
+  printPos("Press [5] to setup alarm ",44 ,1 );//try and error, do not know why. Ask Hazeem
   clearBack();
 }
 void printTimeMenu()
@@ -332,7 +332,7 @@ void printData()
   printPos("Min temprature: ",180,0);
   printPos("Min time stamp: ",240,0);
   printPos("Avg temprature: ",44,1);
-  printPos("------ Temprature data ------",0,0);
+  printPos("------ Todays data ------",2,0);
   printTemprature(maxTemp,76,0);
   printTime(maxStamp, 136, 0);
   printTemprature(minTemp,196,0);
@@ -345,25 +345,23 @@ void printData()
 }
 void printOldData(struct WeekLinkedList *list,int pos)
 {
-  for(int i = 0; i<7;i++)
+
+  while(!(list->id == pos))
   {
-    if(list->id == pos)
-    {
-      //printPos("                                                          ",0,0);
-      printDate(list->year, list->month, list->day,0,0); 
-      printTemprature(list->dayMax,76,0);
-      printTime(list->timeMax, 136, 0);
-      printTemprature(list->dayMin,196,0);
-      printTime(list->timeMin,0,1);
-      printTemprature(list -> dayAvg,60,1);
-      printDataFlag = 0;
-     
-      printBack();
-      printDate(year, month,day,204,1);
-      break;
-    }
     list = list->next;
   }
+    //printPos("                                                          ",0,0);
+  printDate(list->year, list->month, list->day,0,0); 
+  printTemprature(list->dayMax,76,0);
+  printTime(list->timeMax, 136, 0);
+  printTemprature(list->dayMin,196,0);
+  printTime(list->timeMin,0,1);
+  printTemprature(list -> dayAvg,60,1);
+  printDataFlag = 0;
+     
+  printBack();
+  printDate(year, month,day,204,1);
+ 
 }
 void resetPointer()
 {
@@ -371,7 +369,6 @@ void resetPointer()
     Write_Data_2_Display(0);
     Write_Command_2_Display(0x24);
 }
-
 void printKey(int key)
 {
     switch (key)

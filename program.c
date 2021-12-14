@@ -8,6 +8,7 @@ void startData();
 void weekPosition();
 void clearNext();
 void clearPrev();
+void setAlarm();
 
 void startDate()
 {
@@ -73,14 +74,29 @@ void measureFunc()
       avg = totTemp / size;
       printDataFlag = 1;
       measureFlag = 0;
+      if(temprature >= maxAlarm)
+      {
+        printPos("TOO HOT!", 164 ,1 );
+        alarmFlag = 1;
+      }
+      else if(temprature <= minAlarm)
+      {
+        printPos("TOO COLD!" ,164, 1);
+        alarmFlag = 1;
+      }
+      if(alarmFlag == 1 && temprature <= maxAlarm && temprature >= minAlarm )
+      {
+        printPos("         ",164,1);
+        alarmFlag = 0;
+      }   
 }
 void startData()
 {
-
   clearDisplay();
   printData();
   printBack();
-  while(tmpKey != 10){//wait for a back command
+  while(tmpKey != 10)//wait for a back command
+  {
     if(measureFlag == 1)
     {
       measureFunc();
@@ -133,15 +149,13 @@ void weekPosition()//calculate which screen we are on
     tmpKey = keypad();
     delay(150);
     if(measureFlag == 1)
-    {
       measureFunc();
-    }
-    if(weekSize == posDay)
-      break;
     
-     else if(tmpKey == 9 )
+     if(tmpKey == 9 )
      {
         posDay++;
+        if(posDay == weekSize)
+          break;
         printOldData(WeekTemprature, posDay);
         printPos("[7] prev day",104,1);
         buttonUp();
@@ -162,6 +176,91 @@ void weekPosition()//calculate which screen we are on
   }
   printData();
   printPos("[7] prev day",104,1);
+}
+void setAlarm()
+{
+  clearDisplay();
+  printDate(year, month, day, 204,1);
+  printBack();
+  int i = 0;
+  printPos("-------SET ALARM-------",3,0);
+  printPos("[1] Set max temprature: ",60,0);
+  printPos("[2] Set min temprature: ",120,0);
+  if(maxAlarm != 10000)
+  {
+    printPos("Current max: ", 180, 0);
+    printPosChar(maxAlarm/10 + 48,193,0);
+    printPosChar(maxAlarm%10 + 48, 194,0);
+  }
+  if(minAlarm != -1)
+  {
+    printPos("Current min: ", 240, 0);
+    printPosChar(minAlarm/10 + 48,253,0);
+    printPosChar(minAlarm%10 + 48, 254,0);
+  }
+
+  while(tmpKey != 10)
+  {
+    tmpKey = keypad();
+    if(tmpKey == 1)
+    {
+      buttonUp();
+      i = 0;
+      while(i != 2)
+      {
+        clearBack();
+        tmpKey = keypad();
+        if(tmpKey == 11)
+           tmpKey = 0;
+        if(i == 0 && isPressed )
+        {
+          maxAlarm = 10 * tmpKey;
+          printPosChar(tmpKey + 48,84,0); 
+          buttonUp();
+          i++;
+        }
+        else if(i==1 && isPressed)
+        {
+          maxAlarm += tmpKey;
+          printPosChar(tmpKey + 48,85,0);
+          buttonUp();
+          i++;
+        }        
+      }
+      printBack();
+    }
+    
+    if(tmpKey == 2)
+    {
+      i = 0;
+      buttonUp();
+      while(i != 2)
+      { 
+        clearBack();
+        tmpKey = keypad();
+        if(tmpKey == 11)
+           tmpKey = 0;
+        if(i == 0 && isPressed)
+        {
+          minAlarm = 10 * tmpKey;
+          printPosChar(tmpKey + 48,144,0);
+          buttonUp();
+          i++;
+        }
+        else if(i==1 && isPressed)
+        {
+          minAlarm += tmpKey;
+          printPosChar(tmpKey + 48,145,0);
+          buttonUp();
+          i++;
+        }      
+      }
+      printBack();
+    }
+  }
+  clearDisplay();
+  printStartMenu();
+  tmpKey = 0;
 }
 void clearPrev()
 {

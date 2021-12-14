@@ -78,7 +78,11 @@ void calcDate(int currentYear, int currentMonth, int currentDay)
     else
       month++;
   }
-  
+  else if((currentDay == 30) && (month == 4 ||month == 6 || month == 9 || month == 11))
+  {
+    month++;
+    day = 1;
+  }
   else if(currentDay == 28 && currentMonth == 2) // TODO: Flytta runt lite
   {
     if(checkLeap(currentYear) == 1)
