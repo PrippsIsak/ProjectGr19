@@ -45,6 +45,7 @@ void insertLast(struct LinkedList **first, struct LinkedList *el)
     temp->next=el;
   }
    size++;
+  daySize++;
 }
 
 void freeMemory(struct LinkedList**first)//might be useful for higher grades
@@ -117,8 +118,12 @@ struct LinkedList*readSensor(int timeStamp)
     node = (struct LinkedList*) malloc(sizeof(struct LinkedList));
     if(node == NULL)
     {
-        printf("Out of memory");
-        return NULL;
+        for(int i = 0; i<10; i++)
+        {
+          freeNode(&listTemprature);
+          size --;
+        }   
+        node = (struct LinkedList*) malloc(sizeof(struct LinkedList));
     }
     node -> id = sec;
     node -> tempature = temprature; //<- usuing our made function to find a random number
@@ -214,7 +219,9 @@ void reset()
   minTemp = 1000;
   minStamp = 0;
   maxStamp = 0;
-  avg = 0;
+  totTemp = 0;
+  daySize = 0;
+  memoryFlag = 1;
 }
 void weekInsertLast(struct WeekLinkedList **first, struct WeekLinkedList *el)
 {
@@ -229,4 +236,13 @@ void weekInsertLast(struct WeekLinkedList **first, struct WeekLinkedList *el)
     temp->next=el;
   }     
    weekSize++;
+}
+void freeNode(struct LinkedList **first)
+{
+  
+  struct LinkedList *temp = *first,*prev;
+  prev = temp;
+  temp = temp->next;
+  free(prev);
+  *first = temp;
 }

@@ -293,8 +293,8 @@ void printStartMenu()
   printPos("Press [2] to setup time ",120 ,0 );
   
   printPos("Press [3] see measure data",180 ,0 );
-  printPos("Press [4] toggle simulation",240 ,0 );
-  printPos("Press [5] to setup alarm ",44 ,1 );//try and error, do not know why. Ask Hazeem
+  printPos("Press [4] toggle fast mode",240 ,0 );
+  printPos("Press [5] change alarm ",44 ,1 );//try and error, do not know why. Ask Hazeem
   clearBack();
 }
 void printTimeMenu()

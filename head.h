@@ -42,8 +42,8 @@ void freeMemory(struct LinkedList**first);
 int printDataFlag = 0;
 int alarmFlag = 0;
 int flag;
-int maxAlarm = 10000;
-int minAlarm = -1;
+int maxAlarm = 25;
+int minAlarm = 20;
 int minTempFlag = -1;//triggers when a new min is found to print
 int maxTempFlag = -1;//triggers when a new max is found to print
 float temprature = 0;//saved as a global for easy accsess
@@ -67,6 +67,9 @@ int nextPrintFlag = 0;
 int prevPrintFlag = 0;
 int weekSize = 0;
 int id = 0;
+int memoryFlag = 0;
+int daySize = 0;
+void freeNode(struct LinkedList **first);
 
 void delay(int Value)
 {

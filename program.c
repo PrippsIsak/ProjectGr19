@@ -71,9 +71,14 @@ void measureFunc()
       writeTempWhenReady();
       insertLast(&listTemprature,readSensor(sec));
       totTemp += temprature;
-      avg = totTemp / size;
+      avg = totTemp / daySize;
       printDataFlag = 1;
       measureFlag = 0;
+      /*if(memoryFlag == 1)
+      {
+        freeNode(listTemprature);
+        size--;
+      }*/
       if(temprature >= maxAlarm)
       {
         printPos("TOO HOT!", 164 ,1 );
@@ -95,6 +100,8 @@ void startData()
   clearDisplay();
   printData();
   printBack();
+  if(weekSize > 0)
+    printPos("[7] prev day",104,1);
   while(tmpKey != 10)//wait for a back command
   {
     if(measureFlag == 1)
@@ -186,19 +193,13 @@ void setAlarm()
   printPos("-------SET ALARM-------",3,0);
   printPos("[1] Set max temprature: ",60,0);
   printPos("[2] Set min temprature: ",120,0);
-  if(maxAlarm != 10000)
-  {
-    printPos("Current max: ", 180, 0);
-    printPosChar(maxAlarm/10 + 48,193,0);
-    printPosChar(maxAlarm%10 + 48, 194,0);
-  }
-  if(minAlarm != -1)
-  {
-    printPos("Current min: ", 240, 0);
-    printPosChar(minAlarm/10 + 48,253,0);
-    printPosChar(minAlarm%10 + 48, 254,0);
-  }
-
+  printPos("Current max: ", 180, 0);
+  printPosChar(maxAlarm/10 + 48,193,0);
+  printPosChar(maxAlarm%10 + 48, 194,0);
+  printPos("Current min: ", 240, 0);
+  printPosChar(minAlarm/10 + 48,253,0);
+  printPosChar(minAlarm%10 + 48, 254,0);
+  
   while(tmpKey != 10)
   {
     tmpKey = keypad();
@@ -265,27 +266,21 @@ void setAlarm()
 void greenhouse()
 {
   light = calcLight();
-    if(hour > 4 && hour < 20)
+    if(hour >= 4 && hour < 20)
     {
+      rotateServo(18);
       if(light > 0.7)
       {
-        setLed(1);
-        rotateServo(9);
+        setLed(1); 
       }
-       else
-      {
-        rotateServo(18);
+      else
         setLed(0);
-      }
     }
     else
     {
-      // FLAG HERE 
-       rotateServo(18);
+       rotateServo(9);
        setLed(0);
     }
-
-      
 }
 
 void clearPrev()
