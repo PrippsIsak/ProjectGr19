@@ -2,9 +2,8 @@
 #include "system_sam3x.h"
 #include "pins.c"
 
-
-
-void ledConfig(){
+void ledConfig()
+{
   *AT91C_PMC_PCER = 1<<14;
   *AT91C_PIOD_PER = pin28;
   *AT91C_PIOD_PPUDR = pin28;

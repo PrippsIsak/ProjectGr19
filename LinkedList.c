@@ -1,11 +1,8 @@
 #include "at91sam3x8.h"
 #include "system_sam3x.h"
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
-
 
 int isMember(struct LinkedList**first, struct LinkedList *el);
 void reset();
@@ -24,7 +21,6 @@ struct WeekLinkedList
     struct WeekLinkedList*next;
 };
 
-
 struct LinkedList
 {
     int id;
@@ -32,6 +28,7 @@ struct LinkedList
     struct LinkedList*next;
     
 };
+
 void insertLast(struct LinkedList **first, struct LinkedList *el)
 {
   if(*first==NULL)//list is empty!
@@ -75,19 +72,6 @@ int isMember(struct LinkedList**first, struct LinkedList *el)
     return 0;
 }
 
-/*void printList(struct LinkedList*first)//TODO: change to just print a single temp and a date
-{
-    if(first == NULL)
-    {
-        printf("The list is empty \n");
-    }
-    while(first != NULL)
-    {
-        printf("The ID is %d,     The sensor data is %lf\n", first-> id, first -> sensorData);
-        first = first -> next;
-    }
-}*/
-// the name "remove" confilicts. Therefore we use removeNode instead
 void removeNode(struct LinkedList ** first, struct LinkedList *el)//do we need this for the project?
 {
     if(isMember(first,el) == 1)
@@ -109,8 +93,6 @@ void removeNode(struct LinkedList ** first, struct LinkedList *el)//do we need t
         el->next = NULL;
     }
 }
-
-//uppgift 2 börjar
 
 struct LinkedList*readSensor(int timeStamp)
 {
@@ -141,7 +123,6 @@ struct LinkedList*readSensor(int timeStamp)
           minStamp = sec;
           minTempFlag = 1;
         }
-    
     return node;
 }
 
@@ -162,14 +143,11 @@ struct WeekLinkedList *getAddress(struct WeekLinkedList *first,int id)
 
 float findMax(struct LinkedList *first)
 {
-    //struct LinkedList *max;
     float  compare= 0;
     while(first != NULL)
     {
         if(first->tempature > compare){
             compare = first->tempature;
-            //maxStamp = first->id;
-           // max = first;
         }
         first = first -> next;
     }
@@ -177,14 +155,11 @@ float findMax(struct LinkedList *first)
 }
 float findMin(struct LinkedList *first)
 {
-    //struct LinkedList *max;
     float  compare= 1000; // hopefully its not gonna get this hot :)
     while(first != NULL)
     {
         if(first->tempature < compare){
             compare = first->tempature;
-            //minStamp = first->id;
-           // max = first;
         }
         first = first -> next;
     }

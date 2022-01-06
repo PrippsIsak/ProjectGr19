@@ -12,7 +12,6 @@ int startRow = 5;
 void wait(int delay);
 void buttonUp();
 
-
 void initKeypad(){
   *AT91C_PIOD_PER = pin28;
   *AT91C_PIOD_PER = pin27;
@@ -108,11 +107,9 @@ pin39      5        1<<7
     if(colClear == 9)
       colClear = 7; //bitwise 1100
     else
-      colClear++; //bitwise 1010 and 1001
-    
+      colClear++; //bitwise 1010 and 1001  
   }
  
-
   //Sets columnpins back to input
   *AT91C_PIOC_ODR = pin39;
   *AT91C_PIOC_ODR = pin40;

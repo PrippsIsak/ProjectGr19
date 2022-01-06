@@ -24,8 +24,6 @@
 #define pin50 (1<<13)
 #define pin51 (1<<12)
 
-
-
 // Analog pins
 #define analog8 (1<<17)
 //block A

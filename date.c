@@ -12,8 +12,13 @@ char dateSet [8];
 
 // usuing ascii '0' = 48 therefore we substract 48 from the char to get a number.
 //  if a user write # or * the valid date will take care of it.
-int readInput(char str[]){
-
+int readInput(char str[])
+{
+  for(int i = 0; i<8;i++)
+  {
+    if(str[i]-48 > 9)
+      return 0;
+  }
   year = (int)((str[0]-48)*1000 + (str[1]-48)*100 + (str[2]-48)*10 + (str[3]-48)); 
   month = (int)((str[4]-48)*10 + (str[5]-48));
   day = (int)((str[6]-48)*10 + (str[7]-48));
@@ -22,20 +27,21 @@ int readInput(char str[]){
   int validate = validateDate(year, month, day);
   
   return validate;
-
-  //printf("%d, %d, %d, Valid: %d", year, month, day, validate);
 }
-int validateDate(int year, int month, int day){
+int validateDate(int year, int month, int day)
+{
   // filter for all dates
     if(month > 12 || month < 1 || day < 1 || year < 0)
       return 0;
     //check for 31 day months
-   else if((month == 1 || month == 3 ||month == 5 ||month == 7 || month == 8 || month == 10 || month == 12)){
+   else if((month == 1 || month == 3 ||month == 5 ||month == 7 || month == 8 || month == 10 || month == 12))
+   {
         if(day > 31)
           return 0;
     }
     //cehck for 30 day months
-    else if((month == 4 || month == 6 || month == 9 || month == 11)){
+    else if((month == 4 || month == 6 || month == 9 || month == 11))
+    {
         if(day > 30)
           return 0;
     }
@@ -52,7 +58,8 @@ int validateDate(int year, int month, int day){
     return 1;
 }
 
-int checkLeap(int year){
+int checkLeap(int year)
+{
   if(year % 400 == 0)
     return 1;
 
@@ -86,7 +93,7 @@ void calcDate(int currentYear, int currentMonth, int currentDay)
     month++;
     day = 1;
   }
-  else if(currentDay == 28 && currentMonth == 2) // TODO: Flytta runt lite
+  else if(currentDay == 28 && currentMonth == 2)
   {
     if(checkLeap(currentYear) == 1)
       day = 29;
@@ -95,7 +102,6 @@ void calcDate(int currentYear, int currentMonth, int currentDay)
       day = 1;
     month = 3;
     }
-    
   }
   else if(currentDay == 29 && currentMonth ==2)
   {

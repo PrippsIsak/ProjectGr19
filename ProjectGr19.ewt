@@ -2842,9 +2842,6 @@
         </settings>
     </configuration>
     <file>
-        <name>$PROJ_DIR$\commonFuncs.c</name>
-    </file>
-    <file>
         <name>$PROJ_DIR$\cstartup.s</name>
     </file>
     <file>

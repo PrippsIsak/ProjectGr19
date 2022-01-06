@@ -5,14 +5,12 @@
 void initTemprature();
 void resetTemprature();
 void tempMeasure();
-
-
 void TCO_Handler(void);
 void SysTick_Handler(void);
+void clearDisplay();
 
 float calcTemp();
 unsigned int fallingCheck = 0;
-void clearDisplay();
 
 float writeTempWhenReady(){
   while(1){
@@ -32,8 +30,6 @@ float writeTempWhenReady(){
 }
 void initTemprature()
 {
-  //SysTick_Config(SystemCoreClock*0.001); //Slow down the clock
-  
   *AT91C_PMC_PCER = (1<<27);
   *AT91C_PMC_PCER = (1<<12);
   
@@ -49,16 +45,15 @@ void initTemprature()
   NVIC_EnableIRQ(TC0_IRQn);
   
   *AT91C_TC0_SR;
-
 }
-void resetTemprature(){
+void resetTemprature()
+{
   *AT91C_PIOB_SODR = pin2; //enable outputs
   *AT91C_PIOB_CODR = pin2; //creating the pulse, by enable and disable temp
   tFlag1 =1;
   
   while(tFlag1);
-  *AT91C_PIOB_SODR = pin2;
-  
+  *AT91C_PIOB_SODR = pin2; 
 }
 void printTemprature(float temp, int x, int y)
 {
@@ -74,8 +69,6 @@ void printTemprature(float temp, int x, int y)
   tempArray[4] = '\0';
   
   printPos(tempArray,x,y);
-  //tempArray [4]= {0,0,0,0};
-  
 }
 void tempMeasure()
 {

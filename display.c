@@ -23,8 +23,8 @@ void clearBack();
 void printTempMenu();
 void printData();
 
-
-unsigned char Read_Status_Display(void){
+unsigned char Read_Status_Display(void)
+{
 
     unsigned char temp;
 
@@ -67,15 +67,15 @@ unsigned char Read_Status_Display(void){
 
 }
 
-void Write_Command_2_Display(unsigned char Command){
+void Write_Command_2_Display(unsigned char Command)
+{
     // Wait until status returns an OK
-    while(1){
+    while(1)
+    {
         //unsigned char temp = Read_Status_Display();
         if(Read_Status_Display() &(3<<2))  //STA2,3
             break;
     }
-
-    //Read_Status_Display();
 
     //Enables bus pins TEST
     *AT91C_PIOC_OER = bus;

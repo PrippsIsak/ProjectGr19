@@ -1,5 +1,6 @@
 #include "at91sam3x8.h"
 #include "system_sam3x.h"
+
 void waitForBack();
 void startDate();
 void startMeasure();
@@ -74,11 +75,7 @@ void measureFunc()
       avg = totTemp / daySize;
       printDataFlag = 1;
       measureFlag = 0;
-      /*if(memoryFlag == 1)
-      {
-        freeNode(listTemprature);
-        size--;
-      }*/
+
       if(temprature >= maxAlarm)
       {
         printPos("TOO HOT!", 164 ,1 );
@@ -102,7 +99,7 @@ void startData()
   printBack();
   if(weekSize > 0)
     printPos("[7] prev day",104,1);
-  while(tmpKey != 10)//wait for a back command
+  while(tmpKey != 10)
   {
     if(measureFlag == 1)
     {

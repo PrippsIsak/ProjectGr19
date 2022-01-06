@@ -31,10 +31,9 @@ int main()
          startDate();
        if(key == 2)
          startTime();
-       if(key == 3)
-       { 
+       if(key == 3) 
          startData();
-       }
+       
        if(key == 4)
        {
          if(speedrun == 1)
@@ -42,7 +41,6 @@ int main()
          else
            speedrun = 1;
          buttonUp();
-         
        }
        if(key == 5)
          setAlarm();
@@ -52,7 +50,6 @@ int main()
 
 void initEverything(){
     SystemInit();
-
     
     // Display
     initDisplay();

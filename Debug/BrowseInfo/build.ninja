@@ -24,11 +24,6 @@ rule PDBLINK
 
 
 #Build steps
-build C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\commonFuncs.xcl : COMPILER_XCL 
-  xclcommand = -source_file C$:\Users\Axelsson\Desktop\ProjectGr19\commonFuncs.c -xcl_file C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\commonFuncs.xcl -macro_file C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\commonFuncs.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
-  flags = C$:\Users\Axelsson\Desktop\ProjectGr19\commonFuncs.c -o C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\commonFuncs.tmp
-  rspfile_name = C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\commonFuncs.xcl.rsp
-
 build C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\exceptions.xcl : COMPILER_XCL 
   xclcommand = -source_file C$:\Users\Axelsson\Desktop\ProjectGr19\exceptions.c -xcl_file C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\exceptions.xcl -macro_file C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\exceptions.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
   flags = C$:\Users\Axelsson\Desktop\ProjectGr19\exceptions.c -o C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\exceptions.tmp
@@ -49,10 +44,6 @@ build C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\system_sam3x.xcl :
   flags = C$:\Users\Axelsson\Desktop\ProjectGr19\system_sam3x.c -o C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\system_sam3x.tmp
   rspfile_name = C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\system_sam3x.xcl.rsp
 
-build C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\commonFuncs.pbi : INDEXER C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\commonFuncs.xcl |  $
-C$:\Users\Axelsson\Desktop\ProjectGr19\commonFuncs.c
-  flags = -out=C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\commonFuncs.pbi -f C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\commonFuncs.xcl
-
 build C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\exceptions.pbi : INDEXER C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\exceptions.xcl |  $
 C$:\Users\Axelsson\Desktop\ProjectGr19\exceptions.c
   flags = -out=C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\exceptions.pbi -f C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\exceptions.xcl
@@ -72,19 +63,9 @@ C$:\Users\Axelsson\Desktop\ProjectGr19\system_sam3x.c
 build C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\ProjectGr19.pbw : MAKEBROWSE C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\ProjectGr19.pbd
   flags = C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\ProjectGr19.pbd -output C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\ProjectGr19.pbw
 
-build C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\ProjectGr19_part0.pbi : PDBLINK C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\commonFuncs.pbi |  $
-C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\exceptions.pbi
-  flags = -M C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\ProjectGr19_part0.pbi C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\commonFuncs.pbi C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\exceptions.pbi
-
-build C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\ProjectGr19_part1.pbi : PDBLINK C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\main.pbi |  $
-C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\startup_sam3x.pbi
-  flags = -M C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\ProjectGr19_part1.pbi C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\main.pbi C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\startup_sam3x.pbi
-
-build C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\ProjectGr19_part2.pbi : PDBLINK C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\system_sam3x.pbi
-  flags = -M C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\ProjectGr19_part2.pbi C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\system_sam3x.pbi
-
-build C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\ProjectGr19.pbd : PDBLINK C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\ProjectGr19_part0.pbi |  $
-C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\ProjectGr19_part1.pbi $
-C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\ProjectGr19_part2.pbi
-  flags = -M C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\ProjectGr19.pbd C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\ProjectGr19_part0.pbi C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\ProjectGr19_part1.pbi C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\ProjectGr19_part2.pbi
+build C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\ProjectGr19.pbd : PDBLINK C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\exceptions.pbi |  $
+C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\main.pbi $
+C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\startup_sam3x.pbi $
+C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\system_sam3x.pbi
+  flags = -M C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\ProjectGr19.pbd C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\exceptions.pbi C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\main.pbi C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\startup_sam3x.pbi C$:\Users\Axelsson\Desktop\ProjectGr19\Debug\BrowseInfo\system_sam3x.pbi
 

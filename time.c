@@ -7,10 +7,7 @@ int calcTime(int hour, int minute, int second);
 int validateTime(int hour, int minute, int second);
 void waitForTime();
 char timeSet [6];
-
-
 int oldMinute;
-
 
 int readTime(char str[]){
   int hour = (int)((str[0]-48)*10 + (str[1]-48));
@@ -19,10 +16,6 @@ int readTime(char str[]){
 
   int validate = validateTime(hour, minute, second);
   sec = calcTime(hour, minute, second);
-  /*if(validate == 1)
-    flagTime = 1;
-  else
-    flagTime = 0;*/
   return validate;
 }
 int calcTime(int hour, int minute, int second){

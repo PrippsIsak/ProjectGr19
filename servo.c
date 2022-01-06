@@ -2,12 +2,10 @@
 #include "system_sam3x.h"
 #include "pins.c"
 
-unsigned int status = 0;
 void generalConfig();
 void initServo();
+unsigned int status = 0;
 int servoVal();
-
-
 int returnValue = 0;
 
 void initServo()
@@ -24,17 +22,18 @@ void initServo()
   *AT91C_PWMC_CH1_CPRDR = 52500; // 1ms * 20
   *AT91C_PWMC_CH1_CDTYR =  2625;  //ta reda på tills imon 1*10^-3 * 84*10^6/32
 }
-int servoVal(){
-
+int servoVal()
+{
   return *AT91C_PWMC_CH1_CDTYR;
 }
-void rotateServo(int deg){
-  
-  if(deg == 10){
+void rotateServo(int deg)
+{  
+  if(deg == 10)
+  {
     *AT91C_PWMC_CH1_CDTYUPDR = 1838+(233*9*2);// 180 degees
   }
-  else if(deg != 0){
+  else if(deg != 0)
+  {
     *AT91C_PWMC_CH1_CDTYUPDR = 1838+(233*deg);
   }
-  
 }
