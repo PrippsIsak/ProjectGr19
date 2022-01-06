@@ -1,14 +1,11 @@
 # ninja log v5
-81	338	6631726120000000	C:/Users/Axelsson/Desktop/ProjectGr19/Debug/BrowseInfo/startup_sam3x.xcl	e6f34774c408ca5c
-96	355	6631726120000000	C:/Users/Axelsson/Desktop/ProjectGr19/Debug/BrowseInfo/main.xcl	6cf140d3ef6de0bd
-108	371	6631726120000000	C:/Users/Axelsson/Desktop/ProjectGr19/Debug/BrowseInfo/system_sam3x.xcl	b3716865ac41f7b5
-2	390	6631726120000000	C:/Users/Axelsson/Desktop/ProjectGr19/Debug/BrowseInfo/exceptions.xcl	569373abbb66b1cf
-398	464	6631726121553839	C:/Users/Axelsson/Desktop/ProjectGr19/Debug/BrowseInfo/exceptions.pbi	93d6d7ad85138870
-347	641	6631726123023852	C:/Users/Axelsson/Desktop/ProjectGr19/Debug/BrowseInfo/startup_sam3x.pbi	82542d13a1ff3ac2
-10	173	6631726176492776	C:/Users/Axelsson/Desktop/ProjectGr19/Debug/BrowseInfo/system_sam3x.pbi	8ff658a5011daaf0
-1	218	6631726176932754	C:/Users/Axelsson/Desktop/ProjectGr19/Debug/BrowseInfo/main.pbi	90dfc055c45ae610
-223	352	6631726178292766	C:/Users/Axelsson/Desktop/ProjectGr19/Debug/BrowseInfo/ProjectGr19.pbd	6dc089a0e28080be
-360	1604	6631726190362782	C:/Users/Axelsson/Desktop/ProjectGr19/Debug/BrowseInfo/ProjectGr19.pbw	a7bf5d2e6c2ef703
-3	609	6631729977247380	C:/Users/Axelsson/Desktop/ProjectGr19/Debug/BrowseInfo/main.pbi	90dfc055c45ae610
-1	137	6631730032622215	C:/Users/Axelsson/Desktop/ProjectGr19/Debug/BrowseInfo/ProjectGr19.pbd	6dc089a0e28080be
-144	1473	6631730045505282	C:/Users/Axelsson/Desktop/ProjectGr19/Debug/BrowseInfo/ProjectGr19.pbw	a7bf5d2e6c2ef703
+14	253	6631731280000000	C:/Users/Axelsson/Desktop/ProjectGr19/Debug/BrowseInfo/main.xcl	6cf140d3ef6de0bd
+2	270	6631731280000000	C:/Users/Axelsson/Desktop/ProjectGr19/Debug/BrowseInfo/exceptions.xcl	569373abbb66b1cf
+38	285	6631731280000000	C:/Users/Axelsson/Desktop/ProjectGr19/Debug/BrowseInfo/system_sam3x.xcl	b3716865ac41f7b5
+24	301	6631731280000000	C:/Users/Axelsson/Desktop/ProjectGr19/Debug/BrowseInfo/startup_sam3x.xcl	e6f34774c408ca5c
+278	328	6631731287823228	C:/Users/Axelsson/Desktop/ProjectGr19/Debug/BrowseInfo/exceptions.pbi	93d6d7ad85138870
+293	471	6631731289233196	C:/Users/Axelsson/Desktop/ProjectGr19/Debug/BrowseInfo/system_sam3x.pbi	8ff658a5011daaf0
+310	584	6631731290383206	C:/Users/Axelsson/Desktop/ProjectGr19/Debug/BrowseInfo/startup_sam3x.pbi	82542d13a1ff3ac2
+262	601	6631731290533419	C:/Users/Axelsson/Desktop/ProjectGr19/Debug/BrowseInfo/main.pbi	90dfc055c45ae610
+606	739	6631731291943217	C:/Users/Axelsson/Desktop/ProjectGr19/Debug/BrowseInfo/ProjectGr19.pbd	6dc089a0e28080be
+747	2219	6631731306293423	C:/Users/Axelsson/Desktop/ProjectGr19/Debug/BrowseInfo/ProjectGr19.pbw	a7bf5d2e6c2ef703

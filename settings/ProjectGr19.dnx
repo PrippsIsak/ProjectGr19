@@ -1,80 +1,20 @@
 <?xml version="1.0"?>
 <settings>
-    <Stack>
-        <FillEnabled>0</FillEnabled>
-        <OverflowWarningsEnabled>1</OverflowWarningsEnabled>
-        <WarningThreshold>90</WarningThreshold>
-        <SpWarningsEnabled>1</SpWarningsEnabled>
-        <WarnLogOnly>1</WarnLogOnly>
-        <UseTrigger>1</UseTrigger>
-        <TriggerName>main</TriggerName>
-        <LimitSize>0</LimitSize>
-        <ByteLimit>50</ByteLimit>
-    </Stack>
-    <Interrupts>
-        <Enabled>1</Enabled>
-    </Interrupts>
-    <MemConfig>
-        <Base>1</Base>
-        <Manual>0</Manual>
-        <Ddf>1</Ddf>
-        <TypeViol>0</TypeViol>
-        <Stop>1</Stop>
-    </MemConfig>
-    <Trace1>
-        <Enabled>0</Enabled>
-        <ShowSource>1</ShowSource>
-    </Trace1>
-    <Simulator>
-        <Freq>10000000</Freq>
-        <FreqHi>0</FreqHi>
-        <MultiCoreRunAll>1</MultiCoreRunAll>
-    </Simulator>
+    <DebugChecksum>
+        <Checksum>229226</Checksum>
+    </DebugChecksum>
     <PlDriver>
         <FirstRun>0</FirstRun>
         <MemConfigValue>C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\CONFIG\debugger\Microchip\ATSAM3X8E.ddf</MemConfigValue>
     </PlDriver>
-    <ArmDriver>
-        <EnableCache>0</EnableCache>
-    </ArmDriver>
-    <DebugChecksum>
-        <Checksum>250898879</Checksum>
-    </DebugChecksum>
-    <JLinkDriver>
-        <jlinkResetStyle>12</jlinkResetStyle>
-        <jlinkResetStrategy>0</jlinkResetStrategy>
-        <LeaveTargetRunning>_ 0</LeaveTargetRunning>
-        <CStepIntDis>_ 0</CStepIntDis>
-    </JLinkDriver>
     <Disassembly>
         <MixedMode>1</MixedMode>
         <InstrCount>0</InstrCount>
     </Disassembly>
-    <Exceptions>
-        <StopOnUncaught>_ 0</StopOnUncaught>
-        <StopOnThrow>_ 0</StopOnThrow>
-    </Exceptions>
-    <CallStack>
-        <ShowArgs>0</ShowArgs>
-    </CallStack>
-    <SWOTraceHWSettings>
-        <OverrideDefaultClocks>0</OverrideDefaultClocks>
-        <CpuClock>84000000</CpuClock>
-        <ClockAutoDetect>0</ClockAutoDetect>
-        <ClockWanted>2000000</ClockWanted>
-        <JtagSpeed>2000000</JtagSpeed>
-        <Prescaler>42</Prescaler>
-        <TimeStampPrescIndex>0</TimeStampPrescIndex>
-        <TimeStampPrescData>0</TimeStampPrescData>
-        <PcSampCYCTAP>1</PcSampCYCTAP>
-        <PcSampPOSTCNT>15</PcSampPOSTCNT>
-        <PcSampIndex>0</PcSampIndex>
-        <DataLogMode>0</DataLogMode>
-        <ITMportsEnable>0</ITMportsEnable>
-        <ITMportsTermIO>0</ITMportsTermIO>
-        <ITMportsLogFile>0</ITMportsLogFile>
-        <ITMlogFile>$PROJ_DIR$\ITM.log</ITMlogFile>
-    </SWOTraceHWSettings>
+    <Trace1>
+        <Enabled>0</Enabled>
+        <ShowSource>1</ShowSource>
+    </Trace1>
     <Trace2>
         <Enabled>0</Enabled>
         <ShowSource>0</ShowSource>
@@ -120,6 +60,27 @@
         <ShowTimeSum>1</ShowTimeSum>
         <SumSortOrder>0</SumSortOrder>
     </EventLog>
+    <Stack>
+        <FillEnabled>0</FillEnabled>
+        <OverflowWarningsEnabled>1</OverflowWarningsEnabled>
+        <WarningThreshold>90</WarningThreshold>
+        <SpWarningsEnabled>1</SpWarningsEnabled>
+        <WarnLogOnly>1</WarnLogOnly>
+        <UseTrigger>1</UseTrigger>
+        <TriggerName>main</TriggerName>
+        <LimitSize>0</LimitSize>
+        <ByteLimit>50</ByteLimit>
+    </Stack>
+    <DisassembleMode>
+        <mode>0</mode>
+    </DisassembleMode>
+    <Breakpoints2>
+        <Count>0</Count>
+    </Breakpoints2>
+    <Exceptions>
+        <StopOnUncaught>_ 0</StopOnUncaught>
+        <StopOnThrow>_ 0</StopOnThrow>
+    </Exceptions>
     <TermIOLog>
         <LoggingEnabled>_ 0</LoggingEnabled>
         <LogFile>_ ""</LogFile>
@@ -129,6 +90,13 @@
         <LogFile>_ ""</LogFile>
         <Category>_ 0</Category>
     </LogFile>
+    <Aliases>
+        <Count>0</Count>
+        <SuppressDialog>0</SuppressDialog>
+    </Aliases>
+    <CallStack>
+        <ShowArgs>0</ShowArgs>
+    </CallStack>
     <DriverProfiling>
         <Enabled>0</Enabled>
         <Mode>1</Mode>
@@ -141,14 +109,31 @@
     <CallStackStripe>
         <ShowTiming>1</ShowTiming>
     </CallStackStripe>
-    <DisassembleMode>
-        <mode>0</mode>
-    </DisassembleMode>
-    <Breakpoints2>
-        <Count>0</Count>
-    </Breakpoints2>
-    <Aliases>
-        <Count>0</Count>
-        <SuppressDialog>0</SuppressDialog>
-    </Aliases>
+    <JLinkDriver>
+        <LeaveTargetRunning>_ 0</LeaveTargetRunning>
+        <CStepIntDis>_ 0</CStepIntDis>
+        <jlinkResetStyle>12</jlinkResetStyle>
+        <jlinkResetStrategy>0</jlinkResetStrategy>
+    </JLinkDriver>
+    <SWOTraceHWSettings>
+        <OverrideDefaultClocks>0</OverrideDefaultClocks>
+        <CpuClock>84000000</CpuClock>
+        <ClockAutoDetect>0</ClockAutoDetect>
+        <ClockWanted>2000000</ClockWanted>
+        <JtagSpeed>2000000</JtagSpeed>
+        <Prescaler>42</Prescaler>
+        <TimeStampPrescIndex>0</TimeStampPrescIndex>
+        <TimeStampPrescData>0</TimeStampPrescData>
+        <PcSampCYCTAP>1</PcSampCYCTAP>
+        <PcSampPOSTCNT>15</PcSampPOSTCNT>
+        <PcSampIndex>0</PcSampIndex>
+        <DataLogMode>0</DataLogMode>
+        <ITMportsEnable>0</ITMportsEnable>
+        <ITMportsTermIO>0</ITMportsTermIO>
+        <ITMportsLogFile>0</ITMportsLogFile>
+        <ITMlogFile>$PROJ_DIR$\ITM.log</ITMlogFile>
+    </SWOTraceHWSettings>
+    <ArmDriver>
+        <EnableCache>0</EnableCache>
+    </ArmDriver>
 </settings>

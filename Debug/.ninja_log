@@ -1,1 +1,7 @@
 # ninja log v5
+0	335	6631731706833587	C:/Users/Axelsson/Desktop/ProjectGr19/Debug/Obj/cstartup.o	d1793a8670b046aa
+288	565	6631731709023549	C:/Users/Axelsson/Desktop/ProjectGr19/Debug/Obj/exceptions.o	463e3c9dc5f592e9
+299	702	6631731710353550	C:/Users/Axelsson/Desktop/ProjectGr19/Debug/Obj/startup_sam3x.o	33f9bc58536ccaf3
+341	759	6631731710923532	C:/Users/Axelsson/Desktop/ProjectGr19/Debug/Obj/system_sam3x.o	dc5fc64450ec99e3
+280	977	6631731713023579	C:/Users/Axelsson/Desktop/ProjectGr19/Debug/Obj/main.o	64033bb4e57552e8
+990	1198	6631731715313508	C:/Users/Axelsson/Desktop/ProjectGr19/Debug/Exe/ProjectGr19.out	21ad51cd692649f4
